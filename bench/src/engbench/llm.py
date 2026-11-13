@@ -15,6 +15,8 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import shutil
+import subprocess
 import time
 from collections.abc import Callable
 from dataclasses import dataclass, field
@@ -41,6 +43,8 @@ class Budget:
 
     limit_usd: float = 1.0
     spent_usd: float = 0.0
+    # Stop while there is still this much headroom, so the last call cannot push past the limit.
+    reserve_usd: float = 0.002
 
 
 @dataclass
@@ -113,6 +117,43 @@ def anthropic_backend(model: str, effort: str, max_tokens: int = MAX_TOKENS) -> 
     return call
 
 
+NODE_HELPER = Path(__file__).resolve().parents[2] / "node" / "messages.js"
+
+
+def node_backend(model: str, effort: str, max_tokens: int = MAX_TOKENS) -> Backend:
+    """Direct HTTPS call through bench/node/messages.js (native fetch, no SDK).
+
+    Used by default: on some Windows machines the Python SDK's compiled dependency is blocked.
+    The key travels only through the environment, never on a command line.
+    """
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        raise MissingKey(
+            "ANTHROPIC_API_KEY is not set. Set it for live LLM runs, or use --offline to replay "
+            "cached responses from results/cache/."
+        )
+    node = os.environ.get("PTCORE_NODE") or shutil.which("node")
+    if not node:
+        raise MissingKey("Node.js >= 20 is needed for live LLM calls (set PTCORE_NODE).")
+
+    def call(system: str, user: str, schema: dict) -> dict:
+        req = {"model": model, "max_tokens": max_tokens, "effort": effort,
+               "thinking_off": model in THINKING_OFF_MODELS, "system": system, "user": user,
+               "schema": schema}
+        out = subprocess.run([node, str(NODE_HELPER)], input=json.dumps(req), capture_output=True,
+                             text=True, encoding="utf-8", check=False)
+        if out.returncode != 0:
+            raise RuntimeError(f"Messages API call failed: {out.stderr.strip()[:300]}")
+        return json.loads(out.stdout)
+
+    return call
+
+
+def default_backend(model: str, effort: str) -> Backend:
+    if os.environ.get("ENGBENCH_BACKEND", "node") == "sdk":
+        return anthropic_backend(model, effort)
+    return node_backend(model, effort)
+
+
 @dataclass
 class LLMClient:
     task: str
@@ -156,11 +197,11 @@ class LLMClient:
         if rec is None:
             if self.offline:
                 raise CacheMiss(f"no cached response for {self.task}/{item_id} ({k})")
-            if self.budget.spent_usd >= self.budget.limit_usd:
+            if self.budget.spent_usd + self.budget.reserve_usd > self.budget.limit_usd:
                 raise BudgetExceeded(
                     f"spent ${self.budget.spent_usd:.2f} >= limit ${self.budget.limit_usd:.2f}")
             if self.backend is None:
-                self.backend = anthropic_backend(self.model, self.effort)
+                self.backend = default_backend(self.model, self.effort)
             raw = self.backend(system, user, schema)
             rec = {
                 "key": k, "task": self.task, "item_id": item_id, "model": self.model,

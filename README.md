@@ -86,62 +86,96 @@ Three tasks, 150 synthetic items each, seed 2026 ([bench/DATA_CARD.md](bench/DAT
    check works on whole layout sets.
 
 Pipelines: `rules` (the real code), `rules_review` (rules decide at confidence ≥ 0.88, the tool's
-own auto-attach level; everything else goes to a human), `llm` (Claude, structured outputs, every
-item), and `hybrid` (rules when confident, the LLM in the uncertain band, a human below 0.70).
+own auto-attach level; everything else goes to a human), `llm` (Claude Haiku 5.5 over HTTPS, structured
+outputs, every item), and `hybrid` (rules when confident, the LLM in the uncertain band, a human below 0.70).
 Errors are priced asymmetrically: filing into the wrong project costs 10, a review costs 1. The
 thresholds and costs were fixed before the first run. The full method is in
 [bench/README.md](bench/README.md).
 
-### Results so far (rules measured; LLM rows pending an API key)
+### Results (seed 2026, n = 150 per task; LLM = Claude Haiku 5.5, total real cost US$0.03)
 
-| Task | Pipeline | Accuracy (95 % CI) | Review rate | Silent errors | Cost / item |
-|---|---|---|---|---|---|
-| email | rules (real tool) | 94.0 % (90.0-97.3) | 0 % | 6.0 % | 0.24 |
-| email | rules + review at 0.88 | 94.0 % | 38.0 % | **0.0 %** | 0.38 |
-| milestones | rules (real tool) | 77.3 % (70.7-84.0) | 0 % | 22.7 % | 0.68 |
-| milestones | rules + review at 0.85 | 77.3 % | 42.7 % | **0.0 %** | 0.43 |
-| drawing | rules (bench baseline) | 96.2 % (94.7-97.7) | 0 % | 3.8 % | 0.06 |
-| drawing | rules + review | 96.2 % | 3.7 % | 1.2 % | 0.06 |
-| all | llm / hybrid | *pending*; dry upper bound on Claude Haiku 5.5: US$0.034 for the hybrid band (143 calls), US$0.11 for pure LLM (450 calls) | | | |
+| Task | Pipeline | Accuracy (95 % CI) | Review rate | Silent errors | Severe errors¹ | Cost / item² | ECE |
+|---|---|---|---|---|---|---|---|
+| email | rules (real tool) | 94.0 % (90.0-97.3) | 0 % | 6.0 % | 1 | 0.24 | 0.134 |
+| email | rules + review at 0.88 | 94.0 % | 38.0 % | 0.0 % | 0 | 0.38 | 0.134 |
+| email | LLM only | 97.3 % (94.0-99.3) | 0 % | 2.7 % | 0 | **0.08** | 0.111 |
+| email | **hybrid** | 97.3 % (94.0-99.3) | 14.7 % | **0.0 %** | 0 | 0.15 | 0.097 |
+| milestones | rules (real tool) | 77.3 % (70.7-84.0) | 0 % | 22.7 % | 0 | 0.68 | 0.130 |
+| milestones | rules + review at 0.85 | 77.3 % | 42.7 % | 0.0 % | 0 | 0.43 | 0.130 |
+| milestones | LLM only | 98.0 % (95.3-100) | 0 % | 2.0 % | 0 | 0.06 | 0.082 |
+| milestones | **hybrid** | 98.0 % (95.3-100) | 2.0 % | **0.0 %** | 0 | **0.02** | 0.085 |
+| drawing | rules (bench baseline) | 96.2 % (94.7-97.7) | 0 % | 3.8 % | 0 | 0.06 | 0.040 |
+| drawing | rules + review | 96.2 % | 3.7 % | 1.2 % | 0 | 0.06 | 0.040 |
+| drawing | LLM only | **75.2 %** (72.3-78.3) | 0 % | 24.8 % | **15** | 0.74 | 0.192 |
+| drawing | **hybrid** | **98.7 %** (97.7-99.5) | 0 % | 1.3 % | 0 | **0.03** | 0.039 |
 
-A held-out seed (7) gives the same picture (email 89.3 %, milestones 82.0 %, both with 0 silent
-errors under review): [bench/results/heldout_seed7](bench/results/heldout_seed7/RESULTS.md).
+¹ Severe = the most expensive kind of error, made automatically: email filed to the **wrong
+project**; a false milestone or wrong ship dates pushed toward the ERP; a drawing **mismatch passed
+as a match**. ² Expected cost per item with review = 1 and the asymmetric error costs in
+[`config.py`](bench/src/engbench/config.py). Full table, plots and per-case results:
+[bench/results/RESULTS.md](bench/results/RESULTS.md). Raw responses: `bench/results/cache/`.
+
+**Cost and speed.** 443 API calls (the hybrid reuses the LLM pipeline's cached answers) cost
+**US$0.0303** in total, about US$0.00007 per call. About 600 k input tokens (the shared system
+prompts) were read from the prompt cache instead of being billed at full price. The hybrid sends only 38 % of emails, 43 % of milestone messages
+and 15 % of drawings to the model. An LLM call takes about 1.2 s (p50); the rules take under 1 ms.
+`bench verify` replays all 12 runs from the cache for free and gets identical numbers.
 
 **What this says.**
 
-* **The tool's confidence is well ranked.** Every one of its email and milestone errors scores
-  below its own auto-attach threshold. Everything it decided on its own (93 emails and 86
-  milestone messages) was right. "Rules decide when sure, a human sees the rest" therefore gives
-  zero silent errors. The price is reviewing about 40 % of the items.
-* **That review band is what an LLM could shrink.** On milestones, the detectors get every
-  automatic notice right (100 % on all `notice:*` cases) and every prose message wrong, except a
-  customer PO caught by the status rules. Prose is a reading task, which is where a language model
-  should earn its keep. Whether it does, and at what calibration and cost, is the open question
-  for the LLM run. The pre-registered hypotheses are in [bench/README.md](bench/README.md).
-* **Review is not free.** On email, rules + review costs more than rules alone (0.38 against 0.24
-  per item), because most of the reviewed items were already right. The deciding metric is the
-  cost of the errors, not accuracy.
+* **Hybrid is the only setup with zero silent errors on email and milestones, and it is the most
+  accurate on drawings.** The tool decides what it is sure about (all 93 + 86 such decisions were
+  right). The LLM resolves most of the uncertain band, and a human sees 22 emails and 3 milestone
+  messages instead of 57 and 64.
+* **The LLM reads prose; the rules do arithmetic.** On milestones the LLM is near perfect on the
+  prose the detectors cannot read (98 % against 77 %). On the drawing check, pure LLM drops to 75 %
+  and passes **15 real mismatches as matches**, 14 of them with confidence ≥ 0.9. In the hybrid it only sees
+  the 22 fields the parser could not read, and gets 21 of them right.
+* **The surprise: on email, pure LLM has the lowest expected cost** (0.08 against the hybrid's
+  0.15). Its 4 errors are all "not a project" answers at confidence ≤ 0.45, which cost 3 each. The
+  hybrid sends those same 4 to review, but also 18 items the LLM had right at low confidence, and
+  each review costs 1. With these cost weights, the cautious design pays for its caution on email.
+  It never files to the wrong project in either setup.
+* **Calibration depends on the task.** The LLM's stated confidence is better calibrated than the
+  bench's rule confidences on email and milestones (ECE 0.11 / 0.08 against 0.13 / 0.13), but
+  much worse on the drawing check (0.19 against 0.04). There it is most confident when it is
+  wrong.
 
-### Failure modes found (concrete, from the runs)
+**Pre-registered hypotheses** ([bench/README.md](bench/README.md)):
 
-1. **A newsletter names a client** (`E0001`, *"Case study: Granite Rail Products"*). The client's
-   name in the subject and the body adds up to 0.67, and the mail is filed to that client's
-   project. It stays below 0.88, so review catches it.
-2. **A contractor names only the client** (`E0000`, *"We are the contractor on the Maplewood
-   Metalworks overhead conveyor installation"*). This one has no number, contact or domain. The
-   client-in-body rule fires only when the client has exactly one active project, and Maplewood
-   has two, so the mail stays unassigned.
-3. **A common name collides** (`E0098`). A contractor's display name matches a contact of a
-   different project, and contact-name evidence (0.60) files it there. The intended project was
-   misspelt in the subject ("Gelnrock") and lost to the collision.
-4. **The detectors read notices, not people** (milestones, `prose:ship_moved`, 10 of 10 missed).
+| | Hypothesis | Verdict |
+|---|---|---|
+| H1 | LLM beats rules on prose / unseen phrasing, and is not better on notices or identifiers | **Supported.** Prose milestones are almost all right (only the 3 "sister plant" RFQs missed). Notices are 100 % for both. On identifier and contact emails the LLM is worse (4 misses, against 1 for the rules) |
+| H2 | LLM is less reliable on the 2.5 % near-miss boundary | **Supported, strongly.** 75 % against 96 %, with 15 missed mismatches |
+| H3 | Hybrid has a lower expected cost than both rules + review and LLM on ≥ 2 tasks, at < ½ the LLM's USD | **Supported** on milestones and drawings, at 15-39 % of the LLM's spend; **not** on email (see above) |
+| H4 | The LLM's confidence is worse calibrated than the tool's | **Mixed.** True only on the drawing task |
+
+A held-out seed (7) was run for the rules pipelines only (email 89.3 %, milestones 82.0 %, both
+with 0 silent errors under review): [bench/results/heldout_seed7](bench/results/heldout_seed7/RESULTS.md).
+
+### Failure modes (concrete, from the runs)
+
+1. **The LLM passes a 12 % mismatch as a match** (drawing `D0042`, confidence 0.95). The layout
+   says the booth is 22'-0" wide and the quote says *"297 in wide"*. That is 24'-9", but the model
+   answered `match`. The unit-aware parser computes 12.5 % and flags it. The arithmetic belongs in
+   code.
+2. **The LLM flags identical electrical scopes** (`D0005`, confidence 0.93). Drawing: *"TURNKEY BY
+   VENDOR"*; quote: *"supply and install of control panel … by Example Finishing Systems"*. It
+   answered `mismatch`, one of 24 such false alarms. The rules map both phrasings to the same
+   category.
+3. **The detectors read notices, not people** (`prose:ship_moved`, 10 of 10 missed by the rules).
    *"Due to a motor delay the ship date moves from 6/30/2027 to 7/7/2027"* never reaches a
-   detector, because they only parse vendor ship-date reports. The bench routes these to review
-   because the text contains milestone vocabulary.
-5. **An unchanged date is not a change** (`notice:ship_unchanged`, 8 of 8 correct). A second
-   confirmation with the same ship date is recognised and correctly reported as no change. The
-   comparison works line by line, so a split shipment added later is not reported as a change
-   either (unit-tested).
+   detector. The LLM gets both dates right on all 10, and in the hybrid it decides them without a
+   human.
+4. **A newsletter names a client** (`E0001`, *"Case study: Granite Rail Products"*). The tool's
+   client-name evidence adds up to 0.67 and points at that client's project. That is below the
+   0.88 auto-attach line, so the hybrid asks the LLM, which says `none`.
+5. **The LLM misses plain contact evidence** (`E0012`, `E0115`). The sender is a known contact of
+   exactly one project, which the tool scores at 0.78. The LLM answered `none` at confidence
+   0.35-0.45. In the hybrid these go to a human; with LLM only they are silent errors.
+6. **"Sister plant" RFQs** (`M0092`, `M0145`, `M0149`). *"Our sister plant is looking at adding an
+   overhead conveyor. Who should they talk to about pricing?"* was read as `none` by the LLM at low
+   confidence and goes to review in the hybrid. It is the only prose family the LLM missed.
 
 ## 5. Limitations
 
@@ -150,14 +184,16 @@ errors under review): [bench/results/heldout_seed7](bench/results/heldout_seed7/
   Prose and `unseen:*` cases measure what happens outside that. Real mail is longer and messier.
 * **The 94 % real-world agreement figure is not reproducible here.** Only the synthetic benchmark
   is.
+* **One small model, one run.** Haiku 5.5 at `effort=low` with thinking off was chosen for a
+  US$1 budget. A larger model or more effort would likely do better on the drawing arithmetic.
+  n = 150 per task, so differences of a few points are within the CIs.
 * **The glue is mine, not the tool's.** How the tool's output is mapped to benchmark labels and
   confidences (for example the confidence given to "no detector fired") is a set of documented
   constants in [`bench/src/engbench/tasks.py`](bench/src/engbench/tasks.py).
 * **The layout check is partial.** 28 of 44 criteria run from text. Geometry, mail and judgement
   criteria are left out, and the drawing task in the benchmark does not use the tool's check.
-* **The LLM results are pending.** Until the run with a key, this repository shows that the
-  rules-plus-review design works and where an LLM would have to help. It does not yet show that
-  the LLM helps.
+* **The costs are assumptions.** On email, the ranking of pure LLM against the hybrid flips with
+  the price of a review compared with the price of a dropped email.
 
 ## 6. Reproduce
 
@@ -173,7 +209,7 @@ cd bench && pip install -e ".[dev]" && pytest
 cd bench && bench verify        # re-runs everything offline and checks the committed numbers
 ```
 
-LLM runs (the key is read only from the environment; a dry upper-bound estimate runs first and the run stops before any call if it exceeds the limit, US$1 by default):
+LLM runs (the key is read only from the environment; a dry upper-bound estimate runs first and the run stops before any call if it exceeds the limit, US$1 by default). Calls go over HTTPS from a small Node helper (`bench/node/messages.js`, native `fetch`):
 
 ```bash
 cd bench && bench estimate --pipeline hybrid && bench run --pipeline hybrid --task all

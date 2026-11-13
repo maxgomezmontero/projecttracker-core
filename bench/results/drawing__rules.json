@@ -7817,7 +7817,7 @@
    "item_id": "D0000",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 0.00014899997040629387,
+   "latency_s": 6.120000034570694e-05,
    "replayed": false,
    "error": null
   },
@@ -7825,7 +7825,7 @@
    "item_id": "D0001",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.6900007873773575e-05,
+   "latency_s": 3.9999838918447495e-05,
    "replayed": false,
    "error": null
   },
@@ -7833,7 +7833,7 @@
    "item_id": "D0002",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.4800032153725624e-05,
+   "latency_s": 3.1400006264448166e-05,
    "replayed": false,
    "error": null
   },
@@ -7841,7 +7841,7 @@
    "item_id": "D0003",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.0899886041879654e-05,
+   "latency_s": 2.8999987989664078e-05,
    "replayed": false,
    "error": null
   },
@@ -7849,7 +7849,7 @@
    "item_id": "D0004",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.0299881473183632e-05,
+   "latency_s": 2.6800204068422318e-05,
    "replayed": false,
    "error": null
   },
@@ -7857,7 +7857,7 @@
    "item_id": "D0005",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.520003519952297e-05,
+   "latency_s": 3.190012648701668e-05,
    "replayed": false,
    "error": null
   },
@@ -7865,7 +7865,7 @@
    "item_id": "D0006",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.9099872335791588e-05,
+   "latency_s": 2.5600194931030273e-05,
    "replayed": false,
    "error": null
   },
@@ -7873,7 +7873,7 @@
    "item_id": "D0007",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.9700109735131264e-05,
+   "latency_s": 2.7799978852272034e-05,
    "replayed": false,
    "error": null
   },
@@ -7881,7 +7881,7 @@
    "item_id": "D0008",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.1400006264448166e-05,
+   "latency_s": 2.9799994081258774e-05,
    "replayed": false,
    "error": null
   },
@@ -7889,7 +7889,7 @@
    "item_id": "D0009",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.109988756477833e-05,
+   "latency_s": 2.9199989512562752e-05,
    "replayed": false,
    "error": null
   },
@@ -7897,7 +7897,7 @@
    "item_id": "D0010",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.9199989512562752e-05,
+   "latency_s": 2.650008536875248e-05,
    "replayed": false,
    "error": null
   },
@@ -7905,7 +7905,7 @@
    "item_id": "D0011",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.7799978852272034e-05,
+   "latency_s": 2.569984644651413e-05,
    "replayed": false,
    "error": null
   },
@@ -7913,7 +7913,7 @@
    "item_id": "D0012",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.1299889087677e-05,
+   "latency_s": 2.859998494386673e-05,
    "replayed": false,
    "error": null
   },
@@ -7921,7 +7921,7 @@
    "item_id": "D0013",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.8799986466765404e-05,
+   "latency_s": 2.7300091460347176e-05,
    "replayed": false,
    "error": null
   },
@@ -7929,7 +7929,7 @@
    "item_id": "D0014",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.0300114303827286e-05,
+   "latency_s": 2.8499867767095566e-05,
    "replayed": false,
    "error": null
   },
@@ -7937,7 +7937,7 @@
    "item_id": "D0015",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.6399968191981316e-05,
+   "latency_s": 2.5399960577487946e-05,
    "replayed": false,
    "error": null
   },
@@ -7945,7 +7945,7 @@
    "item_id": "D0016",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.410006709396839e-05,
+   "latency_s": 2.2999942302703857e-05,
    "replayed": false,
    "error": null
   },
@@ -7953,7 +7953,7 @@
    "item_id": "D0017",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.9999995604157448e-05,
+   "latency_s": 2.95999925583601e-05,
    "replayed": false,
    "error": null
   },
@@ -7961,7 +7961,7 @@
    "item_id": "D0018",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.37998678535223e-05,
+   "latency_s": 2.459995448589325e-05,
    "replayed": false,
    "error": null
   },
@@ -7969,7 +7969,7 @@
    "item_id": "D0019",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.619996666908264e-05,
+   "latency_s": 2.54001934081316e-05,
    "replayed": false,
    "error": null
   },
@@ -7977,7 +7977,7 @@
    "item_id": "D0020",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.6499852538108826e-05,
+   "latency_s": 2.459995448589325e-05,
    "replayed": false,
    "error": null
   },
@@ -7985,7 +7985,7 @@
    "item_id": "D0021",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.6300083845853806e-05,
+   "latency_s": 2.4899840354919434e-05,
    "replayed": false,
    "error": null
   },
@@ -7993,7 +7993,7 @@
    "item_id": "D0022",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5800196453928947e-05,
+   "latency_s": 2.6999972760677338e-05,
    "replayed": false,
    "error": null
   },
@@ -8001,7 +8001,7 @@
    "item_id": "D0023",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.9600225389003754e-05,
+   "latency_s": 2.9999995604157448e-05,
    "replayed": false,
    "error": null
   },
@@ -8009,7 +8009,7 @@
    "item_id": "D0024",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.619996666908264e-05,
+   "latency_s": 2.659996971487999e-05,
    "replayed": false,
    "error": null
   },
@@ -8017,7 +8017,7 @@
    "item_id": "D0025",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5700079277157784e-05,
+   "latency_s": 2.5399960577487946e-05,
    "replayed": false,
    "error": null
   },
@@ -8025,7 +8025,7 @@
    "item_id": "D0026",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5799963623285294e-05,
+   "latency_s": 2.569984644651413e-05,
    "replayed": false,
    "error": null
   },
@@ -8033,7 +8033,7 @@
    "item_id": "D0027",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.8999987989664078e-05,
+   "latency_s": 2.8099864721298218e-05,
    "replayed": false,
    "error": null
   },
@@ -8041,7 +8041,7 @@
    "item_id": "D0028",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5300076231360435e-05,
+   "latency_s": 2.3300061002373695e-05,
    "replayed": false,
    "error": null
   },
@@ -8049,7 +8049,7 @@
    "item_id": "D0029",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5799963623285294e-05,
+   "latency_s": 2.4700071662664413e-05,
    "replayed": false,
    "error": null
   },
@@ -8057,7 +8057,7 @@
    "item_id": "D0030",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.619996666908264e-05,
+   "latency_s": 2.4800188839435577e-05,
    "replayed": false,
    "error": null
   },
@@ -8065,7 +8065,7 @@
    "item_id": "D0031",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.9099872335791588e-05,
+   "latency_s": 2.7900096029043198e-05,
    "replayed": false,
    "error": null
   },
@@ -8073,7 +8073,7 @@
    "item_id": "D0032",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.6300083845853806e-05,
+   "latency_s": 2.659996971487999e-05,
    "replayed": false,
    "error": null
   },
@@ -8089,7 +8089,7 @@
    "item_id": "D0034",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.060000017285347e-05,
+   "latency_s": 3.4800032153725624e-05,
    "replayed": false,
    "error": null
   },
@@ -8097,7 +8097,7 @@
    "item_id": "D0035",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5899847969412804e-05,
+   "latency_s": 2.7700094506144524e-05,
    "replayed": false,
    "error": null
   },
@@ -8105,7 +8105,7 @@
    "item_id": "D0036",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.8099864721298218e-05,
+   "latency_s": 2.95999925583601e-05,
    "replayed": false,
    "error": null
   },
@@ -8113,7 +8113,7 @@
    "item_id": "D0037",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.5399960577487946e-05,
+   "latency_s": 2.719997428357601e-05,
    "replayed": false,
    "error": null
   },
@@ -8129,7 +8129,7 @@
    "item_id": "D0039",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.6999972760677338e-05,
+   "latency_s": 2.840021625161171e-05,
    "replayed": false,
    "error": null
   },
@@ -8137,7 +8137,7 @@
    "item_id": "D0040",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.95999925583601e-05,
+   "latency_s": 3.120000474154949e-05,
    "replayed": false,
    "error": null
   },
@@ -8145,7 +8145,7 @@
    "item_id": "D0041",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.7900096029043198e-05,
+   "latency_s": 2.8799986466765404e-05,
    "replayed": false,
    "error": null
   },
@@ -8153,7 +8153,7 @@
    "item_id": "D0042",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.0100112780928612e-05,
+   "latency_s": 2.969987690448761e-05,
    "replayed": false,
    "error": null
   },
@@ -8161,7 +8161,7 @@
    "item_id": "D0043",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.0199997127056122e-05,
+   "latency_s": 2.7999980375170708e-05,
    "replayed": false,
    "error": null
   },
@@ -8169,7 +8169,7 @@
    "item_id": "D0044",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.550007775425911e-05,
+   "latency_s": 2.469983883202076e-05,
    "replayed": false,
    "error": null
   },
@@ -8177,7 +8177,7 @@
    "item_id": "D0045",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.3899832740426064e-05,
+   "latency_s": 2.350006252527237e-05,
    "replayed": false,
    "error": null
   },
@@ -8185,7 +8185,7 @@
    "item_id": "D0046",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.459995448589325e-05,
+   "latency_s": 2.4200184270739555e-05,
    "replayed": false,
    "error": null
   },
@@ -8193,7 +8193,7 @@
    "item_id": "D0047",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 2.629985101521015e-05,
+   "latency_s": 2.459995448589325e-05,
    "replayed": false,
    "error": null
   },
@@ -8201,7 +8201,7 @@
    "item_id": "D0048",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 3.520003519952297e-05,
+   "latency_s": 2.359994687139988e-05,
    "replayed": false,
    "error": null
   },
@@ -8209,7 +8209,7 @@
    "item_id": "D0049",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.6900007873773575e-05,
+   "latency_s": 2.4899840354919434e-05,
    "replayed": false,
    "error": null
   },
@@ -8217,7 +8217,7 @@
    "item_id": "D0050",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.279993638396263e-05,
+   "latency_s": 2.9299873858690262e-05,
    "replayed": false,
    "error": null
   },
@@ -8225,7 +8225,7 @@
    "item_id": "D0051",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.3400097638368607e-05,
+   "latency_s": 2.3700064048171043e-05,
    "replayed": false,
    "error": null
   },
@@ -8233,7 +8233,7 @@
    "item_id": "D0052",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 0.00019679986871778965,
+   "latency_s": 2.9099872335791588e-05,
    "replayed": false,
    "error": null
   },
@@ -8241,7 +8241,7 @@
    "item_id": "D0053",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 0.00010200007818639278,
+   "latency_s": 2.7300091460347176e-05,
    "replayed": false,
    "error": null
   },
@@ -8249,7 +8249,7 @@
    "item_id": "D0054",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 7.209996692836285e-05,
+   "latency_s": 2.2900057956576347e-05,
    "replayed": false,
    "error": null
   },
@@ -8257,7 +8257,7 @@
    "item_id": "D0055",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 7.979990914463997e-05,
+   "latency_s": 2.4700071662664413e-05,
    "replayed": false,
    "error": null
   },
@@ -8265,7 +8265,7 @@
    "item_id": "D0056",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 7.069995626807213e-05,
+   "latency_s": 2.4499837309122086e-05,
    "replayed": false,
    "error": null
   },
@@ -8273,7 +8273,7 @@
    "item_id": "D0057",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 7.580011151731014e-05,
+   "latency_s": 2.4399952962994576e-05,
    "replayed": false,
    "error": null
   },
@@ -8281,7 +8281,7 @@
    "item_id": "D0058",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 0.0002267998643219471,
+   "latency_s": 0.0001430001575499773,
    "replayed": false,
    "error": null
   },
@@ -8289,7 +8289,7 @@
    "item_id": "D0059",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 0.00012610014528036118,
+   "latency_s": 3.5899924114346504e-05,
    "replayed": false,
    "error": null
   },
@@ -8297,7 +8297,7 @@
    "item_id": "D0060",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 9.309989400207996e-05,
+   "latency_s": 4.3899985030293465e-05,
    "replayed": false,
    "error": null
   },
@@ -8305,7 +8305,7 @@
    "item_id": "D0061",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 0.00022879987955093384,
+   "latency_s": 2.8299866244196892e-05,
    "replayed": false,
    "error": null
   },
@@ -8313,7 +8313,7 @@
    "item_id": "D0062",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 8.119991980493069e-05,
+   "latency_s": 3.090011887252331e-05,
    "replayed": false,
    "error": null
   },
@@ -8321,7 +8321,7 @@
    "item_id": "D0063",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.360017530620098e-05,
+   "latency_s": 2.859998494386673e-05,
    "replayed": false,
    "error": null
   },
@@ -8329,7 +8329,7 @@
    "item_id": "D0064",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.529999569058418e-05,
+   "latency_s": 2.550007775425911e-05,
    "replayed": false,
    "error": null
   },
@@ -8337,7 +8337,7 @@
    "item_id": "D0065",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.360009916126728e-05,
+   "latency_s": 2.41999514400959e-05,
    "replayed": false,
    "error": null
   },
@@ -8345,7 +8345,7 @@
    "item_id": "D0066",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.6800123527646065e-05,
+   "latency_s": 2.529984340071678e-05,
    "replayed": false,
    "error": null
   },
@@ -8353,7 +8353,7 @@
    "item_id": "D0067",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.319993942975998e-05,
+   "latency_s": 8.870009332895279e-05,
    "replayed": false,
    "error": null
   },
@@ -8361,7 +8361,7 @@
    "item_id": "D0068",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.730001091957092e-05,
+   "latency_s": 5.0999922677874565e-05,
    "replayed": false,
    "error": null
   },
@@ -8369,7 +8369,7 @@
    "item_id": "D0069",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.0300109907984734e-05,
+   "latency_s": 3.9499951526522636e-05,
    "replayed": false,
    "error": null
   },
@@ -8377,7 +8377,7 @@
    "item_id": "D0070",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.889986641705036e-05,
+   "latency_s": 3.309990279376507e-05,
    "replayed": false,
    "error": null
   },
@@ -8385,7 +8385,7 @@
    "item_id": "D0071",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.640003994107246e-05,
+   "latency_s": 3.1300121918320656e-05,
    "replayed": false,
    "error": null
   },
@@ -8393,7 +8393,7 @@
    "item_id": "D0072",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.010003224015236e-05,
+   "latency_s": 2.5499844923615456e-05,
    "replayed": false,
    "error": null
   },
@@ -8401,7 +8401,7 @@
    "item_id": "D0073",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.110003985464573e-05,
+   "latency_s": 2.719997428357601e-05,
    "replayed": false,
    "error": null
   },
@@ -8409,7 +8409,7 @@
    "item_id": "D0074",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.289982073009014e-05,
+   "latency_s": 2.8799986466765404e-05,
    "replayed": false,
    "error": null
   },
@@ -8417,7 +8417,7 @@
    "item_id": "D0075",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.950002767145634e-05,
+   "latency_s": 2.4999957531690598e-05,
    "replayed": false,
    "error": null
   },
@@ -8425,7 +8425,7 @@
    "item_id": "D0076",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.549999721348286e-05,
+   "latency_s": 2.550007775425911e-05,
    "replayed": false,
    "error": null
   },
@@ -8433,7 +8433,7 @@
    "item_id": "D0077",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 8.739996701478958e-05,
+   "latency_s": 2.9999995604157448e-05,
    "replayed": false,
    "error": null
   },
@@ -8441,7 +8441,7 @@
    "item_id": "D0078",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.959998816251755e-05,
+   "latency_s": 2.7300091460347176e-05,
    "replayed": false,
    "error": null
   },
@@ -8449,7 +8449,7 @@
    "item_id": "D0079",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.479995161294937e-05,
+   "latency_s": 2.9899878427386284e-05,
    "replayed": false,
    "error": null
   },
@@ -8457,7 +8457,7 @@
    "item_id": "D0080",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.610000178217888e-05,
+   "latency_s": 2.5799963623285294e-05,
    "replayed": false,
    "error": null
   },
@@ -8465,7 +8465,7 @@
    "item_id": "D0081",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.470006726682186e-05,
+   "latency_s": 3.050011582672596e-05,
    "replayed": false,
    "error": null
   },
@@ -8473,7 +8473,7 @@
    "item_id": "D0082",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.8900023102760315e-05,
+   "latency_s": 2.9199989512562752e-05,
    "replayed": false,
    "error": null
   },
@@ -8481,7 +8481,7 @@
    "item_id": "D0083",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.939991049468517e-05,
+   "latency_s": 3.060000017285347e-05,
    "replayed": false,
    "error": null
   },
@@ -8489,7 +8489,7 @@
    "item_id": "D0084",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.369998350739479e-05,
+   "latency_s": 2.450007013976574e-05,
    "replayed": false,
    "error": null
   },
@@ -8497,7 +8497,7 @@
    "item_id": "D0085",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.850002005696297e-05,
+   "latency_s": 2.8499867767095566e-05,
    "replayed": false,
    "error": null
   },
@@ -8505,7 +8505,7 @@
    "item_id": "D0086",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.529999569058418e-05,
+   "latency_s": 2.6099849492311478e-05,
    "replayed": false,
    "error": null
   },
@@ -8513,7 +8513,7 @@
    "item_id": "D0087",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.030003376305103e-05,
+   "latency_s": 2.650008536875248e-05,
    "replayed": false,
    "error": null
   },
@@ -8521,7 +8521,7 @@
    "item_id": "D0088",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.179992876946926e-05,
+   "latency_s": 2.5399960577487946e-05,
    "replayed": false,
    "error": null
   },
@@ -8529,7 +8529,7 @@
    "item_id": "D0089",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.67000063508749e-05,
+   "latency_s": 2.519995905458927e-05,
    "replayed": false,
    "error": null
   },
@@ -8537,7 +8537,7 @@
    "item_id": "D0090",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.9099867939949036e-05,
+   "latency_s": 2.569984644651413e-05,
    "replayed": false,
    "error": null
   },
@@ -8545,7 +8545,7 @@
    "item_id": "D0091",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.9800222516059875e-05,
+   "latency_s": 2.8999987989664078e-05,
    "replayed": false,
    "error": null
   },
@@ -8553,7 +8553,7 @@
    "item_id": "D0092",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.350005812942982e-05,
+   "latency_s": 2.66998540610075e-05,
    "replayed": false,
    "error": null
   },
@@ -8561,7 +8561,7 @@
    "item_id": "D0093",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.359994247555733e-05,
+   "latency_s": 2.7399975806474686e-05,
    "replayed": false,
    "error": null
   },
@@ -8569,7 +8569,7 @@
    "item_id": "D0094",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.180000491440296e-05,
+   "latency_s": 2.619996666908264e-05,
    "replayed": false,
    "error": null
   },
@@ -8577,7 +8577,7 @@
    "item_id": "D0095",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.289989687502384e-05,
+   "latency_s": 2.759997732937336e-05,
    "replayed": false,
    "error": null
   },
@@ -8585,7 +8585,7 @@
    "item_id": "D0096",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.519995465874672e-05,
+   "latency_s": 2.5999965146183968e-05,
    "replayed": false,
    "error": null
   },
@@ -8593,7 +8593,7 @@
    "item_id": "D0097",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.140000186860561e-05,
+   "latency_s": 3.060000017285347e-05,
    "replayed": false,
    "error": null
   },
@@ -8601,7 +8601,7 @@
    "item_id": "D0098",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.939991049468517e-05,
+   "latency_s": 2.6300083845853806e-05,
    "replayed": false,
    "error": null
   },
@@ -8609,7 +8609,7 @@
    "item_id": "D0099",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.230004899203777e-05,
+   "latency_s": 2.7299858629703522e-05,
    "replayed": false,
    "error": null
   },
@@ -8617,7 +8617,7 @@
    "item_id": "D0100",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.83999028801918e-05,
+   "latency_s": 2.4700071662664413e-05,
    "replayed": false,
    "error": null
   },
@@ -8625,7 +8625,7 @@
    "item_id": "D0101",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.710000939667225e-05,
+   "latency_s": 2.5300076231360435e-05,
    "replayed": false,
    "error": null
   },
@@ -8633,7 +8633,7 @@
    "item_id": "D0102",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.739989526569843e-05,
+   "latency_s": 2.569984644651413e-05,
    "replayed": false,
    "error": null
   },
@@ -8641,7 +8641,7 @@
    "item_id": "D0103",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.710000939667225e-05,
+   "latency_s": 2.4799956008791924e-05,
    "replayed": false,
    "error": null
   },
@@ -8649,7 +8649,7 @@
    "item_id": "D0104",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.449983291327953e-05,
+   "latency_s": 2.9100105166435242e-05,
    "replayed": false,
    "error": null
   },
@@ -8657,7 +8657,7 @@
    "item_id": "D0105",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.219993181526661e-05,
+   "latency_s": 2.619996666908264e-05,
    "replayed": false,
    "error": null
   },
@@ -8665,7 +8665,7 @@
    "item_id": "D0106",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.740012809634209e-05,
+   "latency_s": 2.2399937734007835e-05,
    "replayed": false,
    "error": null
   },
@@ -8673,7 +8673,7 @@
    "item_id": "D0107",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.8999983593821526e-05,
+   "latency_s": 2.810009755194187e-05,
    "replayed": false,
    "error": null
   },
@@ -8681,7 +8681,7 @@
    "item_id": "D0108",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.250005051493645e-05,
+   "latency_s": 2.510007470846176e-05,
    "replayed": false,
    "error": null
   },
@@ -8689,7 +8689,7 @@
    "item_id": "D0109",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.079999729990959e-05,
+   "latency_s": 2.8899870812892914e-05,
    "replayed": false,
    "error": null
   },
@@ -8697,7 +8697,7 @@
    "item_id": "D0110",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.45999500900507e-05,
+   "latency_s": 3.5700155422091484e-05,
    "replayed": false,
    "error": null
   },
@@ -8705,7 +8705,7 @@
    "item_id": "D0111",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.91999851167202e-05,
+   "latency_s": 2.9300106689333916e-05,
    "replayed": false,
    "error": null
   },
@@ -8713,7 +8713,7 @@
    "item_id": "D0112",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.0300109907984734e-05,
+   "latency_s": 2.8899870812892914e-05,
    "replayed": false,
    "error": null
   },
@@ -8721,7 +8721,7 @@
    "item_id": "D0113",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.21000474691391e-05,
+   "latency_s": 2.469983883202076e-05,
    "replayed": false,
    "error": null
   },
@@ -8729,7 +8729,7 @@
    "item_id": "D0114",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.7900091633200645e-05,
+   "latency_s": 2.810009755194187e-05,
    "replayed": false,
    "error": null
   },
@@ -8737,7 +8737,7 @@
    "item_id": "D0115",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.060015246272087e-05,
+   "latency_s": 2.4799956008791924e-05,
    "replayed": false,
    "error": null
   },
@@ -8745,7 +8745,7 @@
    "item_id": "D0116",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.9999915063381195e-05,
+   "latency_s": 2.41999514400959e-05,
    "replayed": false,
    "error": null
   },
@@ -8753,7 +8753,7 @@
    "item_id": "D0117",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.96001448482275e-05,
+   "latency_s": 2.410006709396839e-05,
    "replayed": false,
    "error": null
   },
@@ -8761,7 +8761,7 @@
    "item_id": "D0118",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.9999991208314896e-05,
+   "latency_s": 2.619996666908264e-05,
    "replayed": false,
    "error": null
   },
@@ -8769,7 +8769,7 @@
    "item_id": "D0119",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.630015559494495e-05,
+   "latency_s": 2.750009298324585e-05,
    "replayed": false,
    "error": null
   },
@@ -8777,7 +8777,7 @@
    "item_id": "D0120",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.91999851167202e-05,
+   "latency_s": 2.41999514400959e-05,
    "replayed": false,
    "error": null
   },
@@ -8785,7 +8785,7 @@
    "item_id": "D0121",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.0900114476680756e-05,
+   "latency_s": 2.4399952962994576e-05,
    "replayed": false,
    "error": null
   },
@@ -8793,7 +8793,7 @@
    "item_id": "D0122",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 7.54999928176403e-05,
+   "latency_s": 2.6899855583906174e-05,
    "replayed": false,
    "error": null
   },
@@ -8801,7 +8801,7 @@
    "item_id": "D0123",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.600019358098507e-05,
+   "latency_s": 2.3800181224942207e-05,
    "replayed": false,
    "error": null
   },
@@ -8809,7 +8809,7 @@
    "item_id": "D0124",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.050003528594971e-05,
+   "latency_s": 2.1800165995955467e-05,
    "replayed": false,
    "error": null
   },
@@ -8817,7 +8817,7 @@
    "item_id": "D0125",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.360001862049103e-05,
+   "latency_s": 2.7399975806474686e-05,
    "replayed": false,
    "error": null
   },
@@ -8825,7 +8825,7 @@
    "item_id": "D0126",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.779997445642948e-05,
+   "latency_s": 2.459995448589325e-05,
    "replayed": false,
    "error": null
   },
@@ -8833,7 +8833,7 @@
    "item_id": "D0127",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.679996684193611e-05,
+   "latency_s": 2.559996210038662e-05,
    "replayed": false,
    "error": null
   },
@@ -8841,7 +8841,7 @@
    "item_id": "D0128",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.3799943998456e-05,
+   "latency_s": 2.319994382560253e-05,
    "replayed": false,
    "error": null
   },
@@ -8849,7 +8849,7 @@
    "item_id": "D0129",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.489983595907688e-05,
+   "latency_s": 2.3799948394298553e-05,
    "replayed": false,
    "error": null
   },
@@ -8857,7 +8857,7 @@
    "item_id": "D0130",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.689985118806362e-05,
+   "latency_s": 2.5300076231360435e-05,
    "replayed": false,
    "error": null
   },
@@ -8865,7 +8865,7 @@
    "item_id": "D0131",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.2800169214606285e-05,
+   "latency_s": 2.3799948394298553e-05,
    "replayed": false,
    "error": null
   },
@@ -8873,7 +8873,7 @@
    "item_id": "D0132",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.769985727965832e-05,
+   "latency_s": 2.450007013976574e-05,
    "replayed": false,
    "error": null
   },
@@ -8881,7 +8881,7 @@
    "item_id": "D0133",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.91999851167202e-05,
+   "latency_s": 2.550007775425911e-05,
    "replayed": false,
    "error": null
   },
@@ -8889,7 +8889,7 @@
    "item_id": "D0134",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.650008097290993e-05,
+   "latency_s": 2.4399952962994576e-05,
    "replayed": false,
    "error": null
   },
@@ -8897,7 +8897,7 @@
    "item_id": "D0135",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.570015102624893e-05,
+   "latency_s": 2.7299858629703522e-05,
    "replayed": false,
    "error": null
   },
@@ -8905,7 +8905,7 @@
    "item_id": "D0136",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.139992572367191e-05,
+   "latency_s": 2.2899825125932693e-05,
    "replayed": false,
    "error": null
   },
@@ -8913,7 +8913,7 @@
    "item_id": "D0137",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.6900084018707275e-05,
+   "latency_s": 2.5899847969412804e-05,
    "replayed": false,
    "error": null
   },
@@ -8921,7 +8921,7 @@
    "item_id": "D0138",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 4.620011895895004e-05,
+   "latency_s": 2.1600164473056793e-05,
    "replayed": false,
    "error": null
   },
@@ -8929,7 +8929,7 @@
    "item_id": "D0139",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.150011904537678e-05,
+   "latency_s": 2.7900096029043198e-05,
    "replayed": false,
    "error": null
   },
@@ -8937,7 +8937,7 @@
    "item_id": "D0140",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.579995922744274e-05,
+   "latency_s": 2.6900088414549828e-05,
    "replayed": false,
    "error": null
   },
@@ -8945,7 +8945,7 @@
    "item_id": "D0141",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.349982529878616e-05,
+   "latency_s": 2.3799948394298553e-05,
    "replayed": false,
    "error": null
   },
@@ -8953,7 +8953,7 @@
    "item_id": "D0142",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.779997445642948e-05,
+   "latency_s": 2.6399968191981316e-05,
    "replayed": false,
    "error": null
   },
@@ -8961,7 +8961,7 @@
    "item_id": "D0143",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.339994095265865e-05,
+   "latency_s": 2.3900065571069717e-05,
    "replayed": false,
    "error": null
   },
@@ -8969,7 +8969,7 @@
    "item_id": "D0144",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.0900038331747055e-05,
+   "latency_s": 2.340017817914486e-05,
    "replayed": false,
    "error": null
   },
@@ -8977,7 +8977,7 @@
    "item_id": "D0145",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.030003376305103e-05,
+   "latency_s": 2.2900057956576347e-05,
    "replayed": false,
    "error": null
   },
@@ -8985,7 +8985,7 @@
    "item_id": "D0146",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.959998816251755e-05,
+   "latency_s": 2.7799978852272034e-05,
    "replayed": false,
    "error": null
   },
@@ -8993,7 +8993,7 @@
    "item_id": "D0147",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.269981920719147e-05,
+   "latency_s": 2.3300061002373695e-05,
    "replayed": false,
    "error": null
   },
@@ -9001,7 +9001,7 @@
    "item_id": "D0148",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 5.439994856715202e-05,
+   "latency_s": 2.4200184270739555e-05,
    "replayed": false,
    "error": null
   },
@@ -9009,7 +9009,7 @@
    "item_id": "D0149",
    "llm_called": false,
    "cost_usd": 0.0,
-   "latency_s": 6.160000339150429e-05,
+   "latency_s": 2.759997732937336e-05,
    "replayed": false,
    "error": null
   }

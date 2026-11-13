@@ -1,0 +1,3167 @@
+{
+ "task": "email",
+ "pipeline": "llm",
+ "model": "claude-haiku-5-5",
+ "meta": {
+  "rules_accept": null,
+  "llm_accept": null,
+  "effort": "low",
+  "n_items": 150,
+  "seed": 2026,
+  "n": 150
+ },
+ "units": [
+  {
+   "item_id": "E0000",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.45,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Mentions Maplewood Metalworks overhead conveyor installation, but sender is an outside contractor with no project number, ERP, order, or known thread match; p10 is a Maplewood overhead conveyor but evidence is weak."
+   }
+  },
+  {
+   "item_id": "E0001",
+   "field": "",
+   "case": "newsletter_client_case_study",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a trade newsletter (finishing-digest.example) with a generic case study mention and unsubscribe link, not an active project correspondence."
+   }
+  },
+  {
+   "item_id": "E0002",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.prescott@maplewood-metal.example matches the Maplewood Metalworks contact on p02 Corran Powder Booth, though p10 also uses Maplewood and no project number is cited."
+   }
+  },
+  {
+   "item_id": "E0003",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Morgan Oakley of Example Industries references opportunity OP095779, which matches p01's ERP opportunity."
+   }
+  },
+  {
+   "item_id": "E0004",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Thread id TH81624 is a known thread of p02, and sender avery.prescott@maplewood-metal.example is a p02 contact."
+   }
+  },
+  {
+   "item_id": "E0005",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Morgan Oakley is a contact at Example Industries and the email references job 8690, matching project p09 (N26-8690)."
+   }
+  },
+  {
+   "item_id": "E0006",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.96,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Jamie Dawson at lakeshore-appliance.example with subject citing project number N26-7445, which matches p08 Kestrel Overhead Conveyor."
+   }
+  },
+  {
+   "item_id": "E0007",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.dawson@harborpoint-fab.example references ERP OP012752, which matches project p03 Riverton Blast Room."
+   }
+  },
+  {
+   "item_id": "E0008",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Morgan Oakley is a contact on p01 and p09 (both Example Industries), but the email explicitly says it is about the Dunmore job, which is p01 Dunmore Pretreatment Washer."
+   }
+  },
+  {
+   "item_id": "E0009",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Robin Garrison is a contact of Example Industries, and the email references job 8690, matching project N26-8690 (p09 Glenrock Dry-Off Oven)."
+   }
+  },
+  {
+   "item_id": "E0010",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Quinn Kendrick is a contact at Harbor Point Fabrication and the email references job 8116, which matches project N25-8116 (Riverton Blast Room, p03)."
+   }
+  },
+  {
+   "item_id": "E0011",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Calder at granite-rail.example matches p07's client contact, though no project number, order, or known thread id appears."
+   }
+  },
+  {
+   "item_id": "E0012",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p03",
+   "pred": "none",
+   "confidence": 0.45,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Dawson is a known contact at harborpoint-fab.example, the client for p03 and p11, but the email names no project number, order, or thread id."
+   }
+  },
+  {
+   "item_id": "E0013",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Jamie Dawson is a contact at Lakeshore Appliance Works and the email references vendor order N583469, which maps to project p08."
+   }
+  },
+  {
+   "item_id": "E0014",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Quinn Kendrick is a Harbor Point Fabrication contact and the thread id TH93284 is a known thread for project p03."
+   }
+  },
+  {
+   "item_id": "E0015",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Morgan Oakley is a contact on Example Industries and the email references job 8690, matching project number N26-8690 (Glenrock Dry-Off Oven)."
+   }
+  },
+  {
+   "item_id": "E0016",
+   "field": "",
+   "case": "newsletter_client_case_study",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Newsletter from Finishing Digest with a generic case study mention of Ridgeline Agri Equipment, no project number, order, or thread reference, so it is marketing rather than project correspondence."
+   }
+  },
+  {
+   "item_id": "E0017",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a general contractor for Lakeshore Appliance Works overhead conveyor installation, matching p08 Kestrel Overhead Conveyor client, but no project number, ERP, order, or known thread id is cited."
+   }
+  },
+  {
+   "item_id": "E0018",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.96,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Dawson is a Harbor Point Fabrication contact and the email carries known thread TH97618, which belongs to project p03."
+   }
+  },
+  {
+   "item_id": "E0019",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Taylor Garrison at bluewater-marine.example, a known contact of p05 (Fernhill Pretreatment Washer), but the email itself has no project number, order number, or thread id tying it to a specific project."
+   }
+  },
+  {
+   "item_id": "E0020",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Robin Garrison is a contact on p09 and the email cites vendor order N542727, which matches p09's vendor order."
+   }
+  },
+  {
+   "item_id": "E0021",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a newsletter (Coatings Weekly) with generic marketing content and no project number, ERP, order, thread, or client reference."
+   }
+  },
+  {
+   "item_id": "E0022",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer at cedarvalley-trailers.example and subject cite project number N25-5829, which matches p06 Brookfield Dry-Off Oven."
+   }
+  },
+  {
+   "item_id": "E0023",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded message from Morgan Oakley (example-industries.example) cites ERP opportunity OP019466, which maps to project p09 Glenrock Dry-Off Oven."
+   }
+  },
+  {
+   "item_id": "E0024",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email mentions a Harbor Point Fabrication blast room installation, which matches p03 Riverton Blast Room, but the sender is a third-party contractor with no register contact, project number, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0025",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0026",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Taylor Garrison is a known contact at bluewater-marine.example and the email references vendor order N845393, which matches p05."
+   }
+  },
+  {
+   "item_id": "E0027",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Avery Prescott is a Maplewood Metalworks contact and the subject cites project number N26-8487, which is p10 Marlow Overhead Conveyor; the mention of N25-5829 is secondary."
+   }
+  },
+  {
+   "item_id": "E0028",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Generic trade newsletter from coatings-weekly.example with no project number, ERP, order, or known thread reference."
+   }
+  },
+  {
+   "item_id": "E0029",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.85,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Fenwick is a contact on p04 and the thread id TH10672 is a known thread of p04, though p12 also lists Pat Fenwick as a contact."
+   }
+  },
+  {
+   "item_id": "E0030",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Subject names the Corran powder booth, which matches p02, though the sender is a general contractor not in the project's contact list and no project number or thread id matches."
+   }
+  },
+  {
+   "item_id": "E0031",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer is a contact at cedarvalley-trailers.example and the thread id TH85272 is a known thread for project p06 (Brookfield Dry-Off Oven)."
+   }
+  },
+  {
+   "item_id": "E0032",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer is a contact at Cedar Valley Trailers and the email references vendor order N486761, which matches project p06."
+   }
+  },
+  {
+   "item_id": "E0033",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Calder is a contact at Granite Rail Products and the email is on known thread TH81539, which belongs to p07."
+   }
+  },
+  {
+   "item_id": "E0034",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Drew Prescott is a known contact at Example Industries, and the email cites ERP opportunity OP095779, which matches project p01."
+   }
+  },
+  {
+   "item_id": "E0035",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Prescott at maplewood-metal.example and job number 6617 match project p02 (N26-6617 Corran Powder Booth)."
+   }
+  },
+  {
+   "item_id": "E0036",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer is a contact at Cedar Valley Trailers and the email references job 5829, matching project N25-5829 (p06, Brookfield Dry-Off Oven)."
+   }
+  },
+  {
+   "item_id": "E0037",
+   "field": "",
+   "case": "project_number",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Avery Prescott is a known contact at Maplewood Metalworks, and subject cites project number N26-8487, which matches p10 Marlow Overhead Conveyor."
+   }
+  },
+  {
+   "item_id": "E0038",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Calder at granite-rail.example matches the p07 Halden Overhead Conveyor contact, though no project number or thread id matches."
+   }
+  },
+  {
+   "item_id": "E0039",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Pat Dawson at harborpoint-fab.example referencing ERP opportunity OP012752, which maps to project p03 (Riverton Blast Room)."
+   }
+  },
+  {
+   "item_id": "E0040",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Generic trade newsletter from coatings-weekly.example with no project number, ERP opportunity, vendor order, known thread id, or client contact match."
+   }
+  },
+  {
+   "item_id": "E0041",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.85,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is from granite-rail.example (client of p07) and the subject names the Halden project, though no project number or thread id matches."
+   }
+  },
+  {
+   "item_id": "E0042",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, vendor order, known thread id, or client contact."
+   }
+  },
+  {
+   "item_id": "E0043",
+   "field": "",
+   "case": "project_number",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Drew Prescott is a known contact of Example Industries and the subject cites project number N25-4975, matching p01."
+   }
+  },
+  {
+   "item_id": "E0044",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Quinn Kendrick is a Harbor Point contact and the email explicitly names the Elsworth job, which is project p11."
+   }
+  },
+  {
+   "item_id": "E0045",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.96,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.archer@cedarvalley-trailers.example is the p06 contact and the subject cites N25-5829, which is p06's project number."
+   }
+  },
+  {
+   "item_id": "E0046",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example about spray guns on sale, with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0047",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.85,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email names the Glenrock job and sender Morgan Oakley is a known contact at Example Industries for p09 Glenrock Dry-Off Oven, though no project number is given."
+   }
+  },
+  {
+   "item_id": "E0048",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Ingram is a contact on p11 at harborpoint-fab.example and the email cites ERP opportunity OP093271, which matches p11."
+   }
+  },
+  {
+   "item_id": "E0049",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Morgan Oakley is a contact on p01 (Dunmore Pretreatment Washer) and the email explicitly says it is about the Dunmore job, though Morgan is also a contact on p09 at the same client domain."
+   }
+  },
+  {
+   "item_id": "E0050",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Avery Prescott (maplewood-metal.example) cites project number N26-6617, which is Corran Powder Booth."
+   }
+  },
+  {
+   "item_id": "E0051",
+   "field": "",
+   "case": "redirected_thread",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Prescott is a Maplewood Metalworks contact and the email explicitly names project N26-6617 (Corran Powder Booth), though it cites thread TH21066 which belongs to p11."
+   }
+  },
+  {
+   "item_id": "E0052",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Calder at granite-rail.example, but the job number N26-8932 is a typo-near of register project N26-8923 (Halden Overhead Conveyor), and the thread id C00052 is not a known thread."
+   }
+  },
+  {
+   "item_id": "E0053",
+   "field": "",
+   "case": "project_number",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Quinn Kendrick is a contact at Harbor Point Fabrication and the subject cites project number N25-8116, which is p03 Riverton Blast Room."
+   }
+  },
+  {
+   "item_id": "E0054",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Taylor Garrison is a contact at Bluewater Marine and the email carries known thread id TH51083, which belongs to p05."
+   }
+  },
+  {
+   "item_id": "E0055",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is Taylor Garrison at bluewater-marine.example and the email references job 4840, matching project N26-4840 (p05)."
+   }
+  },
+  {
+   "item_id": "E0056",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.calder@granite-rail.example and thread id TH81539 both match project p07 (Halden Overhead Conveyor)."
+   }
+  },
+  {
+   "item_id": "E0057",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a general contractor referencing Cedar Valley Trailers dry-off oven, which matches p06 Brookfield Dry-Off Oven, but no project number, ERP, order, or known thread id is cited and the sender domain is not in the register."
+   }
+  },
+  {
+   "item_id": "E0058",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Dawson is a Harbor Point Fabrication contact and thread TH97618 is a known thread for project p03."
+   }
+  },
+  {
+   "item_id": "E0059",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is at ridgeline-agri.example and the subject names Ashford, matching p12 Ashford Powder Booth for Ridgeline Agri Equipment, though the sender's name differs from the listed contacts."
+   }
+  },
+  {
+   "item_id": "E0060",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Kim Prescott at ridgeline-agri.example and thread id TH56825 match project p04 Westbury Cure Oven."
+   }
+  },
+  {
+   "item_id": "E0061",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.archer@cedarvalley-trailers.example is a known contact and the email cites job 5829, matching project N25-5829 (Brookfield Dry-Off Oven)."
+   }
+  },
+  {
+   "item_id": "E0062",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Internal team lunch scheduling email from an in-house sender with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0063",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Pat Archer at Cedar Valley Trailers references ERP opportunity OP039288, which maps to project p06."
+   }
+  },
+  {
+   "item_id": "E0064",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Jamie Dawson at lakeshore-appliance.example and subject cites project number N26-7445, which is Kestrel Overhead Conveyor (p08), despite a mention of N26-6617 as a side note."
+   }
+  },
+  {
+   "item_id": "E0065",
+   "field": "",
+   "case": "project_number",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Avery Prescott at maplewood-metal.example references project number N26-6617 in the subject, which matches p02 Corran Powder Booth."
+   }
+  },
+  {
+   "item_id": "E0066",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a newsletter (Coatings Weekly) with no project number, order, or thread reference matching any project."
+   }
+  },
+  {
+   "item_id": "E0067",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Thread id TH27198 matches p09 Glenrock Dry-Off Oven, and sender Morgan Oakley is a known p09 contact."
+   }
+  },
+  {
+   "item_id": "E0068",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Internal team lunch message from an in-house sender with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0069",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Jamie Dawson at lakeshore-appliance.example references ERP opportunity OP060958, which matches p08."
+   }
+  },
+  {
+   "item_id": "E0070",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a generic newsletter (coatings-weekly.example) with no project number, order, thread, or client reference."
+   }
+  },
+  {
+   "item_id": "E0071",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Sam Ingram is a known contact at Ridgeline Agri Equipment and the email references job 6353, matching project p12 (N25-6353)."
+   }
+  },
+  {
+   "item_id": "E0072",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer is a contact at Cedar Valley Trailers, the client for project p06, but the email gives no project number, order number, or thread id matching the register."
+   }
+  },
+  {
+   "item_id": "E0073",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Jamie Dawson is a contact at Lakeshore Appliance Works and the email is on known thread TH71994, which belongs to project p08."
+   }
+  },
+  {
+   "item_id": "E0074",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Dawson is a known contact and the email references vendor order N125941, which matches project p03 (Riverton Blast Room)."
+   }
+  },
+  {
+   "item_id": "E0075",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Avery Prescott is a contact at Maplewood Metalworks and the email cites vendor order N195089, which matches project p10."
+   }
+  },
+  {
+   "item_id": "E0076",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.55,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Robin Garrison is a contact of p09 at Example Industries, but the email gives no project number, ERP opportunity, vendor order, or known thread id, and Example Industries also has p01 with an overlapping contact."
+   }
+  },
+  {
+   "item_id": "E0077",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer at cedarvalley-trailers.example with subject citing project number N25-5829 (Brookfield Dry-Off Oven, p06)."
+   }
+  },
+  {
+   "item_id": "E0078",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, vendor order, known thread id, or client contact match."
+   }
+  },
+  {
+   "item_id": "E0079",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded message from Drew Prescott at example-industries.example about an invoice milestone split, which matches p01's client and contact, but no project number, ERP opportunity, order, or thread id is given."
+   }
+  },
+  {
+   "item_id": "E0080",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Quinn Kendrick is a Harbor Point Fabrication contact and the subject cites project number N25-8116, which matches p03 Riverton Blast Room, though the body also mentions N26-8690 (p09)."
+   }
+  },
+  {
+   "item_id": "E0081",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, vendor order, known thread id, or client contact."
+   }
+  },
+  {
+   "item_id": "E0082",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Harbor Point Fabrication contact Quinn Kendrick references project number N26-9984, which matches p11 Elsworth Cure Oven."
+   }
+  },
+  {
+   "item_id": "E0083",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a trade newsletter (coatings-weekly.example) with generic airflow tips, no project number, ERP, order, or known thread reference."
+   }
+  },
+  {
+   "item_id": "E0084",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.35,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Kim Prescott is a Ridgeline Agri contact, but the subject number N26-3901 matches no project register entry and the thread id C00084 is unknown."
+   }
+  },
+  {
+   "item_id": "E0085",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Kim Prescott is at ridgeline-agri.example and the email cites job 9301, which matches project N26-9301 (Westbury Cure Oven)."
+   }
+  },
+  {
+   "item_id": "E0086",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.45,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is Quinn Kendrick at harborpoint-fab.example, a Harbor Point contact, but subject number N25-1816 matches no register project (N25-8116 is Riverton, a close typo), so attribution is uncertain."
+   }
+  },
+  {
+   "item_id": "E0087",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p12",
+   "pred": "none",
+   "confidence": 0.45,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Sam Ingram is a Ridgeline Agri Equipment contact, but the project number N25-3653 does not match any register entry and no thread id matches."
+   }
+  },
+  {
+   "item_id": "E0088",
+   "field": "",
+   "case": "project_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.calder@granite-rail.example and subject cites project number N26-8923, matching p07 Halden Overhead Conveyor."
+   }
+  },
+  {
+   "item_id": "E0089",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender domain example-industries.example matches client for p01 and p09, and subject names Glenrock which is p09, but no project number or thread id links it definitively."
+   }
+  },
+  {
+   "item_id": "E0090",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is Avery Prescott at maplewood-metal.example and thread id TH76154 belongs to project p10 (Marlow Overhead Conveyor)."
+   }
+  },
+  {
+   "item_id": "E0091",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Internal team lunch scheduling from an in-house sender with no project number, order number, thread id, or client domain reference."
+   }
+  },
+  {
+   "item_id": "E0092",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email names the Westbury job and sender Pat Fenwick is a contact on p04 (Westbury Cure Oven), explicitly distinguishing it from the other project."
+   }
+  },
+  {
+   "item_id": "E0093",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Thread id TH27198 matches known thread of p09, and sender Morgan Oakley is a contact on p09 at Example Industries."
+   }
+  },
+  {
+   "item_id": "E0094",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Morgan Oakley is a contact on Example Industries, and the email cites ERP opportunity OP095779, which maps to p01."
+   }
+  },
+  {
+   "item_id": "E0095",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, order number, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0096",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0097",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded email from Pat Archer at cedarvalley-trailers.example references ERP opportunity OP039288, which is the Brookfield Dry-Off Oven project p06."
+   }
+  },
+  {
+   "item_id": "E0098",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.45,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Subject mentions 'Gelnrock dry-off oven' (likely misspelt Glenrock, p09), but sender domain gc-builders.example and thread id C00098 match no known project."
+   }
+  },
+  {
+   "item_id": "E0099",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Fenwick (ridgeline-agri domain) explicitly says the email is about the Westbury job, which is p04."
+   }
+  },
+  {
+   "item_id": "E0100",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email is a generic newsletter from Coatings Weekly with no project number, ERP, order, or known thread reference."
+   }
+  },
+  {
+   "item_id": "E0101",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Archer at cedarvalley-trailers.example matches p06 contact and client, though subject number N25-5892 differs from register N25-5829 (likely typo)."
+   }
+  },
+  {
+   "item_id": "E0102",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.45,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded message is from Robin Garrison at Example Industries, a contact on p09 (Glenrock Dry-Off Oven) and p01, but no project number or ERP/vendor order number appears, so the project is ambiguous between p01 and p09."
+   }
+  },
+  {
+   "item_id": "E0103",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Ingram is a contact on p11 (harborpoint-fab.example) and the email references job 9984, matching project N26-9984 Elsworth Cure Oven."
+   }
+  },
+  {
+   "item_id": "E0104",
+   "field": "",
+   "case": "newsletter_client_case_study",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a Finishing Digest newsletter with no project number, order, thread id, or client contact; it only mentions Example Industries generally."
+   }
+  },
+  {
+   "item_id": "E0105",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.7,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email references Harbor Point Fabrication blast room installation, matching p03 Riverton Blast Room (client Harbor Point Fabrication), though sender is a general contractor not in the contact list and no project number or thread id matches."
+   }
+  },
+  {
+   "item_id": "E0106",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Quinn Kendrick is a Harbor Point Fabrication contact and the email explicitly says it is about the Riverton job, which is project p03 (Riverton Blast Room)."
+   }
+  },
+  {
+   "item_id": "E0107",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.calder@granite-rail.example and subject cite project N26-8923 (Halden Overhead Conveyor, Granite Rail), though the body mentions N26-8487 as a possible side effect."
+   }
+  },
+  {
+   "item_id": "E0108",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email refers to the Bluewater Marine Components pretreatment washer installation, matching p05 (Fernhill Pretreatment Washer, client Bluewater Marine Components), though sender is a contractor not a listed contact."
+   }
+  },
+  {
+   "item_id": "E0109",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is Pat Calder at granite-rail.example and the subject cites project number N26-8923 (Halden Overhead Conveyor), though it mentions N25-8116 as a possible side effect."
+   }
+  },
+  {
+   "item_id": "E0110",
+   "field": "",
+   "case": "redirected_thread",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email explicitly names project number N25-4975 (Dunmore Pretreatment Washer) and is from Drew Prescott at example-industries.example, though it sits on thread TH81624 which belongs to p02."
+   }
+  },
+  {
+   "item_id": "E0111",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Thread id TH30987 is a known thread of p12, and sender Pat Fenwick is a p12 contact at ridgeline-agri.example."
+   }
+  },
+  {
+   "item_id": "E0112",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a generic newsletter (coatings-weekly.example) with no project number, order, thread id, or client reference."
+   }
+  },
+  {
+   "item_id": "E0113",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.calder@granite-rail.example matches p07's sole contact and client domain, though no project number or thread id is cited."
+   }
+  },
+  {
+   "item_id": "E0114",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Ingram is a Harbor Point contact and the email cites vendor order N518144, which matches project p11 (Elsworth Cure Oven)."
+   }
+  },
+  {
+   "item_id": "E0115",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p09",
+   "pred": "none",
+   "confidence": 0.35,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Robin Garrison is a known contact at Example Industries, which is linked to projects p01 and p09, but the email gives no project number, ERP, order, or thread id to tell them apart."
+   }
+  },
+  {
+   "item_id": "E0116",
+   "field": "",
+   "case": "redirected_thread",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email explicitly cites project number N26-7445 (Kestrel Overhead Conveyor), matching sender Jamie Dawson at lakeshore-appliance.example, despite the old thread id TH10672 belonging to p04."
+   }
+  },
+  {
+   "item_id": "E0117",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded from Jamie Dawson at lakeshore-appliance.example, a contact on Kestrel Overhead Conveyor (p08), but the email is a generic filter interval question with no project number or thread id."
+   }
+  },
+  {
+   "item_id": "E0118",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Prescott is at maplewood-metal.example and the email cites OP045616, which matches p02's ERP opportunity."
+   }
+  },
+  {
+   "item_id": "E0119",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Job number 9301 matches project N26-9301 (Westbury Cure Oven, p04), and sender Pat Fenwick is a p04 contact at ridgeline-agri.example."
+   }
+  },
+  {
+   "item_id": "E0120",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender pat.calder@granite-rail.example and ERP opportunity OP038696 both match project p07 Halden Overhead Conveyor."
+   }
+  },
+  {
+   "item_id": "E0121",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded message from Harbor Point Fabrication's Quinn Kendrick cites ERP opportunity OP093271, which matches p11 Elsworth Cure Oven."
+   }
+  },
+  {
+   "item_id": "E0122",
+   "field": "",
+   "case": "project_number",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Morgan Oakley is a known contact at Example Industries and the subject cites project number N26-8690, which is Glenrock Dry-Off Oven (p09)."
+   }
+  },
+  {
+   "item_id": "E0123",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Vendor marketing email about spray guns on sale, with no project number, ERP opportunity, order number, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0124",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Subject names 'Kesrtel overhead conveyor' (misspelt Kestrel), matching p08 Kestrel Overhead Conveyor, though sender domain gc-builders.example matches no client."
+   }
+  },
+  {
+   "item_id": "E0125",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.55,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Subject names Corran powder booth, but sender domain gc-builders.example matches no client in the register and no project number, ERP, order or thread id appears."
+   }
+  },
+  {
+   "item_id": "E0126",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Prescott is a contact on p02 and the thread id TH81624 is a known p02 thread."
+   }
+  },
+  {
+   "item_id": "E0127",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.8,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is from lakeshore-appliance.example and subject names Kestrel, matching p08 Kestrel Overhead Conveyor's client domain, though no project number or ERP/order reference appears."
+   }
+  },
+  {
+   "item_id": "E0128",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.96,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Forwarded message from Robin Garrison (example-industries.example) references project number N26-8690, matching p09 Glenrock Dry-Off Oven."
+   }
+  },
+  {
+   "item_id": "E0129",
+   "field": "",
+   "case": "project_number",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender avery.prescott@maplewood-metal.example is a contact for p02 and the subject cites job number N26-6617, which matches p02."
+   }
+  },
+  {
+   "item_id": "E0130",
+   "field": "",
+   "case": "project_number",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Project number N25-4975 in subject matches p01, and sender Drew Prescott is a known p01 contact at example-industries.example."
+   }
+  },
+  {
+   "item_id": "E0131",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Generic industry newsletter from Coatings Weekly with no project number, ERP opportunity, vendor order, thread id, or client contact matching any project."
+   }
+  },
+  {
+   "item_id": "E0132",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Jamie Dawson is a registered contact at Lakeshore Appliance Works and the email references job 7445, matching project N26-7445 (Kestrel Overhead Conveyor)."
+   }
+  },
+  {
+   "item_id": "E0133",
+   "field": "",
+   "case": "redirected_thread",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email explicitly names N26-7445 (Kestrel Overhead Conveyor) and is from Jamie Dawson at lakeshore-appliance, though it reuses thread TH27676 which belongs to p07."
+   }
+  },
+  {
+   "item_id": "E0134",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender domain cedarvalley-trailers.example and subject 'Brookfield' match client Cedar Valley Trailers' Brookfield Dry-Off Oven project p06."
+   }
+  },
+  {
+   "item_id": "E0135",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Jamie Dawson is a contact on p08 at lakeshore-appliance.example, and the subject cites N26-7454, a near-typo of p08's N26-7445."
+   }
+  },
+  {
+   "item_id": "E0136",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Fenwick is a Ridgeline contact and the email explicitly says it is about the Ashford job, matching p12 Ashford Powder Booth."
+   }
+  },
+  {
+   "item_id": "E0137",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.6,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a general contractor (gc-builders.example) referencing Granite Rail Products overhead conveyor installation, which matches p07 Halden Overhead Conveyor client, though no project number, ERP, order, or known thread id is cited and the sender is not a registered contact."
+   }
+  },
+  {
+   "item_id": "E0138",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Thread id TH27198 is a known thread for p09, and sender Morgan Oakley is a p09 contact at Example Industries."
+   }
+  },
+  {
+   "item_id": "E0139",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example about spray guns on sale, with no project number, ERP opportunity, vendor order, or known thread reference."
+   }
+  },
+  {
+   "item_id": "E0140",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.55,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a contractor (millwright-co.example) asking about a powder booth installation for Maplewood Metalworks, which matches p02 Corran Powder Booth, but the sender is not a registered contact and no project number or ERP/vendor order number is given."
+   }
+  },
+  {
+   "item_id": "E0141",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.95,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Calder at granite-rail.example references job 8923, matching project p07 N26-8923 and its client domain."
+   }
+  },
+  {
+   "item_id": "E0142",
+   "field": "",
+   "case": "newsletter_client_case_study",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender is a generic newsletter (finishing-digest.example) with no project number, ERP/vendor order, or known thread id, only a mention of Granite Rail Products in marketing copy."
+   }
+  },
+  {
+   "item_id": "E0143",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.9,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Drew Prescott is a contact at Example Industries, who is listed under p01 with vendor order N705472 in the subject line."
+   }
+  },
+  {
+   "item_id": "E0144",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.85,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender domain cedarvalley-trailers.example and subject 'Brookfield' match client Cedar Valley Trailers and project p06 Brookfield Dry-Off Oven, though the sender is a temp not in the contact list."
+   }
+  },
+  {
+   "item_id": "E0145",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Email cites ERP opportunity OP093271 and sender Pat Ingram at harborpoint-fab.example, matching p11 Elsworth Cure Oven."
+   }
+  },
+  {
+   "item_id": "E0146",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Internal team lunch scheduling email from the company's own domain with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0147",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Unsolicited vendor marketing from industrial-supply.example with no project number, ERP opportunity, vendor order, or known thread id."
+   }
+  },
+  {
+   "item_id": "E0148",
+   "field": "",
+   "case": "project_number",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.97,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Pat Prescott at maplewood-metal domain and subject cites project number N26-6617, matching p02 Corran Powder Booth."
+   }
+  },
+  {
+   "item_id": "E0149",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.93,
+   "route": "llm",
+   "truth_extra": {},
+   "pred_extra": {
+    "evidence": "Sender Drew Prescott is a registered contact of p01 at Example Industries, and the email references vendor order N705472, which matches p01."
+   }
+  }
+ ],
+ "traces": [
+  {
+   "item_id": "E0000",
+   "llm_called": true,
+   "cost_usd": 0.000346625,
+   "latency_s": 2.2478682,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0001",
+   "llm_called": true,
+   "cost_usd": 7.027000000000002e-05,
+   "latency_s": 2.2166979,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0002",
+   "llm_called": true,
+   "cost_usd": 8.167e-05,
+   "latency_s": 1.1526994,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0003",
+   "llm_called": true,
+   "cost_usd": 7.717000000000001e-05,
+   "latency_s": 1.5116327,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0004",
+   "llm_called": true,
+   "cost_usd": 7.107000000000001e-05,
+   "latency_s": 1.119519,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0005",
+   "llm_called": true,
+   "cost_usd": 6.917e-05,
+   "latency_s": 1.3726135,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0006",
+   "llm_called": true,
+   "cost_usd": 8.387000000000001e-05,
+   "latency_s": 1.6094349,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0007",
+   "llm_called": true,
+   "cost_usd": 7.167e-05,
+   "latency_s": 1.1293027999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0008",
+   "llm_called": true,
+   "cost_usd": 8.357e-05,
+   "latency_s": 1.2358049,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0009",
+   "llm_called": true,
+   "cost_usd": 7.637e-05,
+   "latency_s": 1.2151044999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0010",
+   "llm_called": true,
+   "cost_usd": 7.887000000000001e-05,
+   "latency_s": 1.2706511,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0011",
+   "llm_called": true,
+   "cost_usd": 6.697e-05,
+   "latency_s": 1.3090036999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0012",
+   "llm_called": true,
+   "cost_usd": 7.217e-05,
+   "latency_s": 1.2202328,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0013",
+   "llm_called": true,
+   "cost_usd": 7.217e-05,
+   "latency_s": 1.1299287000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0014",
+   "llm_called": true,
+   "cost_usd": 7.237e-05,
+   "latency_s": 1.1944523,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0015",
+   "llm_called": true,
+   "cost_usd": 7.567e-05,
+   "latency_s": 1.2080788,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0016",
+   "llm_called": true,
+   "cost_usd": 7.897e-05,
+   "latency_s": 1.3306491,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0017",
+   "llm_called": true,
+   "cost_usd": 8.687e-05,
+   "latency_s": 1.2338042,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0018",
+   "llm_called": true,
+   "cost_usd": 7.177000000000001e-05,
+   "latency_s": 1.1205299,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0019",
+   "llm_called": true,
+   "cost_usd": 9.087e-05,
+   "latency_s": 2.5962381,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0020",
+   "llm_called": true,
+   "cost_usd": 6.837000000000001e-05,
+   "latency_s": 1.0720937999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0021",
+   "llm_called": true,
+   "cost_usd": 6.767000000000001e-05,
+   "latency_s": 1.1462932,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0022",
+   "llm_called": true,
+   "cost_usd": 7.817e-05,
+   "latency_s": 1.1745291,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0023",
+   "llm_called": true,
+   "cost_usd": 8.287000000000001e-05,
+   "latency_s": 1.2762681,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0024",
+   "llm_called": true,
+   "cost_usd": 8.147e-05,
+   "latency_s": 1.4566025999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0025",
+   "llm_called": true,
+   "cost_usd": 6.737e-05,
+   "latency_s": 1.2218376999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0026",
+   "llm_called": true,
+   "cost_usd": 7.067e-05,
+   "latency_s": 1.1493874000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0027",
+   "llm_called": true,
+   "cost_usd": 8.587e-05,
+   "latency_s": 1.7242751,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0028",
+   "llm_called": true,
+   "cost_usd": 6.387000000000001e-05,
+   "latency_s": 1.1101767,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0029",
+   "llm_called": true,
+   "cost_usd": 7.707e-05,
+   "latency_s": 1.2891747,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0030",
+   "llm_called": true,
+   "cost_usd": 7.147e-05,
+   "latency_s": 1.2307937999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0031",
+   "llm_called": true,
+   "cost_usd": 8.027000000000002e-05,
+   "latency_s": 1.1566437,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0032",
+   "llm_called": true,
+   "cost_usd": 6.927e-05,
+   "latency_s": 1.2925008,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0033",
+   "llm_called": true,
+   "cost_usd": 6.917e-05,
+   "latency_s": 1.0765317,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0034",
+   "llm_called": true,
+   "cost_usd": 7.087e-05,
+   "latency_s": 1.1665270999999997,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0035",
+   "llm_called": true,
+   "cost_usd": 7.287e-05,
+   "latency_s": 1.3560083000000003,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0036",
+   "llm_called": true,
+   "cost_usd": 7.777000000000001e-05,
+   "latency_s": 1.3134404,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0037",
+   "llm_called": true,
+   "cost_usd": 7.767000000000001e-05,
+   "latency_s": 1.1694681,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0038",
+   "llm_called": true,
+   "cost_usd": 7.096999999999999e-05,
+   "latency_s": 1.2665582,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0039",
+   "llm_called": true,
+   "cost_usd": 8.357e-05,
+   "latency_s": 1.1449587,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0040",
+   "llm_called": true,
+   "cost_usd": 6.937000000000001e-05,
+   "latency_s": 1.1697289,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0041",
+   "llm_called": true,
+   "cost_usd": 6.827000000000001e-05,
+   "latency_s": 1.0888434,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0042",
+   "llm_called": true,
+   "cost_usd": 6.917e-05,
+   "latency_s": 1.1907639,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0043",
+   "llm_called": true,
+   "cost_usd": 6.767000000000001e-05,
+   "latency_s": 1.1189813,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0044",
+   "llm_called": true,
+   "cost_usd": 7.157000000000001e-05,
+   "latency_s": 1.2852841000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0045",
+   "llm_called": true,
+   "cost_usd": 7.387000000000001e-05,
+   "latency_s": 1.1169273,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0046",
+   "llm_called": true,
+   "cost_usd": 7.167e-05,
+   "latency_s": 1.316163,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0047",
+   "llm_called": true,
+   "cost_usd": 7.667e-05,
+   "latency_s": 1.5310757,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0048",
+   "llm_called": true,
+   "cost_usd": 7.397e-05,
+   "latency_s": 1.1645428,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0049",
+   "llm_called": true,
+   "cost_usd": 8.567e-05,
+   "latency_s": 1.380758,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0050",
+   "llm_called": true,
+   "cost_usd": 7.707e-05,
+   "latency_s": 1.1105594,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0051",
+   "llm_called": true,
+   "cost_usd": 8.657e-05,
+   "latency_s": 1.2546424,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0052",
+   "llm_called": true,
+   "cost_usd": 8.357e-05,
+   "latency_s": 1.2101611,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0053",
+   "llm_called": true,
+   "cost_usd": 7.717000000000001e-05,
+   "latency_s": 1.1512376000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0054",
+   "llm_called": true,
+   "cost_usd": 7.147e-05,
+   "latency_s": 1.1352513999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0055",
+   "llm_called": true,
+   "cost_usd": 6.957000000000001e-05,
+   "latency_s": 1.0585692,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0056",
+   "llm_called": true,
+   "cost_usd": 7.057000000000001e-05,
+   "latency_s": 1.2804748,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0057",
+   "llm_called": true,
+   "cost_usd": 9.007000000000001e-05,
+   "latency_s": 1.1486545,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0058",
+   "llm_called": true,
+   "cost_usd": 7.017e-05,
+   "latency_s": 1.0142936999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0059",
+   "llm_called": true,
+   "cost_usd": 8.457000000000001e-05,
+   "latency_s": 1.3975343,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0060",
+   "llm_called": true,
+   "cost_usd": 7.077000000000002e-05,
+   "latency_s": 1.190747,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0061",
+   "llm_called": true,
+   "cost_usd": 7.817e-05,
+   "latency_s": 1.2747819999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0062",
+   "llm_called": true,
+   "cost_usd": 6.477e-05,
+   "latency_s": 1.2049949,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0063",
+   "llm_called": true,
+   "cost_usd": 7.697e-05,
+   "latency_s": 0.9668589,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0064",
+   "llm_called": true,
+   "cost_usd": 8.597e-05,
+   "latency_s": 1.902884,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0065",
+   "llm_called": true,
+   "cost_usd": 7.267000000000001e-05,
+   "latency_s": 1.169661,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0066",
+   "llm_called": true,
+   "cost_usd": 6.317e-05,
+   "latency_s": 1.2484629,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0067",
+   "llm_called": true,
+   "cost_usd": 7.217e-05,
+   "latency_s": 1.3629783,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0068",
+   "llm_called": true,
+   "cost_usd": 6.277e-05,
+   "latency_s": 1.7475815,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0069",
+   "llm_called": true,
+   "cost_usd": 6.937000000000001e-05,
+   "latency_s": 1.1767275,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0070",
+   "llm_called": true,
+   "cost_usd": 6.367e-05,
+   "latency_s": 1.1010248999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0071",
+   "llm_called": true,
+   "cost_usd": 7.237e-05,
+   "latency_s": 1.199513,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0072",
+   "llm_called": true,
+   "cost_usd": 7.397e-05,
+   "latency_s": 1.183846,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0073",
+   "llm_called": true,
+   "cost_usd": 7.367e-05,
+   "latency_s": 1.1747682,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0074",
+   "llm_called": true,
+   "cost_usd": 6.937000000000001e-05,
+   "latency_s": 1.1603686,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0075",
+   "llm_called": true,
+   "cost_usd": 7.017e-05,
+   "latency_s": 1.207903,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0076",
+   "llm_called": true,
+   "cost_usd": 8.347e-05,
+   "latency_s": 1.5403399,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0077",
+   "llm_called": true,
+   "cost_usd": 7.757e-05,
+   "latency_s": 1.2579264999999997,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0078",
+   "llm_called": true,
+   "cost_usd": 6.967e-05,
+   "latency_s": 1.4900562,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0079",
+   "llm_called": true,
+   "cost_usd": 8.487e-05,
+   "latency_s": 1.1365054,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0080",
+   "llm_called": true,
+   "cost_usd": 8.717000000000001e-05,
+   "latency_s": 1.2405858,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0081",
+   "llm_called": true,
+   "cost_usd": 6.937000000000001e-05,
+   "latency_s": 1.1516632999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0082",
+   "llm_called": true,
+   "cost_usd": 8.207e-05,
+   "latency_s": 1.18287,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0083",
+   "llm_called": true,
+   "cost_usd": 6.917e-05,
+   "latency_s": 1.4021528,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0084",
+   "llm_called": true,
+   "cost_usd": 7.427e-05,
+   "latency_s": 1.1325795,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0085",
+   "llm_called": true,
+   "cost_usd": 7.477e-05,
+   "latency_s": 1.2279609,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0086",
+   "llm_called": true,
+   "cost_usd": 8.757e-05,
+   "latency_s": 1.2874287,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0087",
+   "llm_called": true,
+   "cost_usd": 7.277000000000001e-05,
+   "latency_s": 1.2922392,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0088",
+   "llm_called": true,
+   "cost_usd": 7.137e-05,
+   "latency_s": 1.1995284000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0089",
+   "llm_called": true,
+   "cost_usd": 7.407e-05,
+   "latency_s": 1.2226903,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0090",
+   "llm_called": true,
+   "cost_usd": 7.507000000000001e-05,
+   "latency_s": 1.1057474,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0091",
+   "llm_called": true,
+   "cost_usd": 6.197e-05,
+   "latency_s": 1.2211402999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0092",
+   "llm_called": true,
+   "cost_usd": 7.596999999999999e-05,
+   "latency_s": 1.3133584999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0093",
+   "llm_called": true,
+   "cost_usd": 7.057000000000001e-05,
+   "latency_s": 1.2774175,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0094",
+   "llm_called": true,
+   "cost_usd": 7.087e-05,
+   "latency_s": 1.0620716,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0095",
+   "llm_called": true,
+   "cost_usd": 6.617e-05,
+   "latency_s": 1.4774505,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0096",
+   "llm_called": true,
+   "cost_usd": 6.717e-05,
+   "latency_s": 1.3213652999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0097",
+   "llm_called": true,
+   "cost_usd": 8.427e-05,
+   "latency_s": 1.1818905,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0098",
+   "llm_called": true,
+   "cost_usd": 7.807e-05,
+   "latency_s": 1.4537961,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0099",
+   "llm_called": true,
+   "cost_usd": 7.087e-05,
+   "latency_s": 1.3150733000000001,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0100",
+   "llm_called": true,
+   "cost_usd": 6.367e-05,
+   "latency_s": 1.1452146,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0101",
+   "llm_called": true,
+   "cost_usd": 7.617e-05,
+   "latency_s": 1.2980509,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0102",
+   "llm_called": true,
+   "cost_usd": 9.477000000000002e-05,
+   "latency_s": 1.3951182000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0103",
+   "llm_called": true,
+   "cost_usd": 7.687e-05,
+   "latency_s": 1.2494117,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0104",
+   "llm_called": true,
+   "cost_usd": 6.867e-05,
+   "latency_s": 1.1133127999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0105",
+   "llm_called": true,
+   "cost_usd": 8.637e-05,
+   "latency_s": 1.2426017,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0106",
+   "llm_called": true,
+   "cost_usd": 8.047e-05,
+   "latency_s": 1.1529337,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0107",
+   "llm_called": true,
+   "cost_usd": 8.417e-05,
+   "latency_s": 1.2725207,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0108",
+   "llm_called": true,
+   "cost_usd": 8.637e-05,
+   "latency_s": 1.3150206,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0109",
+   "llm_called": true,
+   "cost_usd": 8.187e-05,
+   "latency_s": 1.4796634,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0110",
+   "llm_called": true,
+   "cost_usd": 8.607000000000001e-05,
+   "latency_s": 1.372708,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0111",
+   "llm_called": true,
+   "cost_usd": 7.177000000000001e-05,
+   "latency_s": 1.1800031,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0112",
+   "llm_called": true,
+   "cost_usd": 6.417e-05,
+   "latency_s": 1.6863758,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0113",
+   "llm_called": true,
+   "cost_usd": 6.747e-05,
+   "latency_s": 1.4441027000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0114",
+   "llm_called": true,
+   "cost_usd": 7.427e-05,
+   "latency_s": 1.2253623,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0115",
+   "llm_called": true,
+   "cost_usd": 7.717000000000001e-05,
+   "latency_s": 1.3971558,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0116",
+   "llm_called": true,
+   "cost_usd": 9.037e-05,
+   "latency_s": 1.2362218,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0117",
+   "llm_called": true,
+   "cost_usd": 8.787000000000001e-05,
+   "latency_s": 1.4584477,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0118",
+   "llm_called": true,
+   "cost_usd": 6.997e-05,
+   "latency_s": 1.1678672,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0119",
+   "llm_called": true,
+   "cost_usd": 7.887000000000001e-05,
+   "latency_s": 1.42679,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0120",
+   "llm_called": true,
+   "cost_usd": 7.207e-05,
+   "latency_s": 1.0511145,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0121",
+   "llm_called": true,
+   "cost_usd": 8.447e-05,
+   "latency_s": 1.1332141999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0122",
+   "llm_called": true,
+   "cost_usd": 7.567e-05,
+   "latency_s": 1.066019,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0123",
+   "llm_called": true,
+   "cost_usd": 6.437000000000001e-05,
+   "latency_s": 1.1151181,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0124",
+   "llm_called": true,
+   "cost_usd": 8.227000000000001e-05,
+   "latency_s": 1.2366856,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0125",
+   "llm_called": true,
+   "cost_usd": 7.117e-05,
+   "latency_s": 1.8149345000000001,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0126",
+   "llm_called": true,
+   "cost_usd": 6.617e-05,
+   "latency_s": 1.3740974999999997,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0127",
+   "llm_called": true,
+   "cost_usd": 8.087e-05,
+   "latency_s": 1.394712,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0128",
+   "llm_called": true,
+   "cost_usd": 7.987e-05,
+   "latency_s": 1.6969797999999998,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0129",
+   "llm_called": true,
+   "cost_usd": 7.117e-05,
+   "latency_s": 1.1860841,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0130",
+   "llm_called": true,
+   "cost_usd": 6.917e-05,
+   "latency_s": 1.261075,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0131",
+   "llm_called": true,
+   "cost_usd": 6.987000000000001e-05,
+   "latency_s": 1.4353018,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0132",
+   "llm_called": true,
+   "cost_usd": 8.017e-05,
+   "latency_s": 1.1483701000000002,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0133",
+   "llm_called": true,
+   "cost_usd": 8.817e-05,
+   "latency_s": 1.2702682,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0134",
+   "llm_called": true,
+   "cost_usd": 7.937000000000001e-05,
+   "latency_s": 1.6161298,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0135",
+   "llm_called": true,
+   "cost_usd": 7.757e-05,
+   "latency_s": 1.3593354,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0136",
+   "llm_called": true,
+   "cost_usd": 7.637e-05,
+   "latency_s": 1.1374664,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0137",
+   "llm_called": true,
+   "cost_usd": 9.467e-05,
+   "latency_s": 1.3714599,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0138",
+   "llm_called": true,
+   "cost_usd": 6.967e-05,
+   "latency_s": 1.203208,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0139",
+   "llm_called": true,
+   "cost_usd": 7.237e-05,
+   "latency_s": 1.5492152000000001,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0140",
+   "llm_called": true,
+   "cost_usd": 8.927e-05,
+   "latency_s": 1.4518512000000001,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0141",
+   "llm_called": true,
+   "cost_usd": 6.767000000000001e-05,
+   "latency_s": 1.0736088000000001,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0142",
+   "llm_called": true,
+   "cost_usd": 7.727000000000001e-05,
+   "latency_s": 1.3681195,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0143",
+   "llm_called": true,
+   "cost_usd": 6.897e-05,
+   "latency_s": 1.1343443,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0144",
+   "llm_called": true,
+   "cost_usd": 8.807e-05,
+   "latency_s": 1.1768083999999999,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0145",
+   "llm_called": true,
+   "cost_usd": 7.547e-05,
+   "latency_s": 1.0640626,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0146",
+   "llm_called": true,
+   "cost_usd": 6.477e-05,
+   "latency_s": 1.0963427,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0147",
+   "llm_called": true,
+   "cost_usd": 6.717e-05,
+   "latency_s": 1.3766174,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0148",
+   "llm_called": true,
+   "cost_usd": 7.167e-05,
+   "latency_s": 1.1665839,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0149",
+   "llm_called": true,
+   "cost_usd": 6.947e-05,
+   "latency_s": 1.1484883,
+   "replayed": false,
+   "error": null
+  }
+ ]
+}
