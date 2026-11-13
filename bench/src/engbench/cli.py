@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sys
 import tempfile
 from dataclasses import asdict
@@ -166,6 +167,20 @@ VERIFY_KEYS = ("accuracy", "macro_f1", "review_rate", "auto_error_rate", "cost_p
                "usd_total", "routes", "n_units")
 
 
+def _same(a, b) -> bool:
+    """Equal, treating floats as equal up to platform rounding (last-ulp differences)."""
+    if isinstance(a, float) or isinstance(b, float):
+        try:
+            return math.isclose(float(a), float(b), rel_tol=1e-9, abs_tol=1e-12)
+        except (TypeError, ValueError):
+            return False
+    if isinstance(a, dict) and isinstance(b, dict):
+        return a.keys() == b.keys() and all(_same(a[k], b[k]) for k in a)
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(_same(x, y) for x, y in zip(a, b))
+    return a == b
+
+
 def cmd_verify(args) -> int:
     """Re-run every committed result offline (rules live, LLM from cache) and compare."""
     ref = Path(args.results_dir)
@@ -189,7 +204,7 @@ def cmd_verify(args) -> int:
             continue
         got = json.loads(got_path.read_text(encoding="utf-8"))
         for k in VERIFY_KEYS:
-            if got.get(k) != want.get(k):
+            if not _same(got.get(k), want.get(k)):
                 bad.append(f"{name}: {k} {want.get(k)} != {got.get(k)}")
     for b in bad:
         print(f"[mismatch] {b}")

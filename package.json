@@ -8,7 +8,7 @@
   "bin": { "ptcore": "cli/ptcore.js" },
   "engines": { "node": ">=20" },
   "scripts": {
-    "test": "node --test \"test/**/*.test.js\""
+    "test": "node --test test/*.test.js"
   },
   "files": ["index.js", "lib", "cli"]
 }
