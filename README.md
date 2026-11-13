@@ -102,7 +102,7 @@ thresholds and costs were fixed before the first run. The full method is in
 | milestones | rules + review at 0.85 | 77.3 % | 42.7 % | **0.0 %** | 0.43 |
 | drawing | rules (bench baseline) | 96.2 % (94.7-97.7) | 0 % | 3.8 % | 0.06 |
 | drawing | rules + review | 96.2 % | 3.7 % | 1.2 % | 0.06 |
-| all | llm / hybrid | *needs `ANTHROPIC_API_KEY`*; estimated ≤ US$4.9 for all three tasks | | | |
+| all | llm / hybrid | *pending*; dry upper bound on Claude Haiku 5.5: US$0.034 for the hybrid band (143 calls), US$0.11 for pure LLM (450 calls) | | | |
 
 A held-out seed (7) gives the same picture (email 89.3 %, milestones 82.0 %, both with 0 silent
 errors under review): [bench/results/heldout_seed7](bench/results/heldout_seed7/RESULTS.md).
@@ -173,10 +173,10 @@ cd bench && pip install -e ".[dev]" && pytest
 cd bench && bench verify        # re-runs everything offline and checks the committed numbers
 ```
 
-LLM runs (the key is read only from the environment; spending stops at US$5):
+LLM runs (the key is read only from the environment; a dry upper-bound estimate runs first and the run stops before any call if it exceeds the limit, US$1 by default):
 
 ```bash
-cd bench && bench run --pipeline all --task all --max-cost-usd 5
+cd bench && bench estimate --pipeline hybrid && bench run --pipeline hybrid --task all
 ```
 
 Docker runs the JS tests and `bench verify`:

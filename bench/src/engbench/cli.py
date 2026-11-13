@@ -10,7 +10,16 @@ from dataclasses import asdict
 from pathlib import Path
 
 from . import PIPELINES, TASKS
-from .config import DEFAULT_EFFORT, DEFAULT_MODEL, DEFAULT_N, DEFAULT_SEED, PRICING, RULES_ACCEPT
+from .config import (
+    DEFAULT_EFFORT,
+    DEFAULT_MAX_COST_USD,
+    DEFAULT_MODEL,
+    DEFAULT_N,
+    DEFAULT_SEED,
+    MAX_TOKENS,
+    PRICING,
+    RULES_ACCEPT,
+)
 from .data.common import write_jsonl
 from .llm import Budget, BudgetExceeded, CacheMiss, LLMClient, MissingKey, price
 from .metrics import summarize
@@ -46,6 +55,15 @@ def cmd_run(args) -> int:
     results.mkdir(parents=True, exist_ok=True)
     budget = Budget(limit_usd=args.max_cost_usd)
     status = 0
+    if not args.offline and any(p in ("llm", "hybrid") for p in _expand(args.pipeline, PIPELINES)):
+        rows = plan_live_calls(args)
+        upper = sum(r[3] for r in rows)
+        print(f"pre-flight: {sum(r[2] for r in rows)} live calls, upper bound ${upper:.4f} "
+              f"(limit ${args.max_cost_usd:.2f})")
+        if upper > args.max_cost_usd:
+            print("[stop] the upper-bound estimate is over the limit; lower --n or raise "
+                  "--max-cost-usd. No call was made.")
+            return 5
     for name in _expand(args.task, TASKS):
         task = load_task(name, args.n, args.seed)
         for pipe in _expand(args.pipeline, PIPELINES):
@@ -100,27 +118,47 @@ def cmd_report(args) -> int:
     return 0
 
 
+def call_upper_bound_usd(task, it, model: str, max_tokens: int = MAX_TOKENS) -> float:
+    """Worst-case cost of one call: no cache hits, about 3 characters per input token (English
+    text and JSON run closer to 4, so this overestimates), and every call using all of max_tokens."""
+    import json as _json
+
+    chars = len(task.system) + len(task.user_prompt(it)) + len(_json.dumps(task.schema))
+    return price(model, {"input_tokens": chars / 3 + 50, "output_tokens": max_tokens})
+
+
+def plan_live_calls(args) -> list[tuple[str, str, int, float]]:
+    """(task, pipeline, new calls, upper-bound USD) for the calls a run would make right now.
+    Items already in the cache cost nothing; hybrid reuses responses cached by llm and vice versa."""
+    rows = []
+    for name in _expand(args.task, TASKS):
+        task = load_task(name, args.n, args.seed)
+        cache_dir = getattr(args, "cache_dir", None) or Path(args.results_dir) / "cache"
+        client = LLMClient(name, model=args.model, effort=args.effort, cache_dir=Path(cache_dir))
+        seen: set[str] = set()
+        for pipe in [p for p in _expand(args.pipeline, PIPELINES) if p in ("llm", "hybrid")]:
+            items = [it for it in _needed_llm_items(task, pipe)
+                     if it.id not in seen and not client.has(task.system, task.user_prompt(it), task.schema)]
+            seen |= {it.id for it in items}
+            rows.append((name, pipe, len(items),
+                         sum(call_upper_bound_usd(task, it, args.model) for it in items)))
+    return rows
+
+
 def cmd_estimate(args) -> int:
-    """Rough pre-flight cost estimate (chars/3.5 tokens in, assumed output tokens)."""
+    """Dry pre-flight estimate: no API call is made."""
     if args.model not in PRICING:
         print(f"no price for {args.model}")
         return 1
-    total = 0.0
-    for name in _expand(args.task, TASKS):
-        task = load_task(name, args.n, args.seed)
-        seen: set[str] = set()  # hybrid reuses the llm pipeline's cached responses
-        for pipe in [p for p in _expand(args.pipeline, PIPELINES) if p in ("llm", "hybrid")]:
-            items = [it for it in _needed_llm_items(task, pipe) if it.id not in seen]
-            seen |= {it.id for it in items}
-            usd = 0.0
-            for it in items:
-                tin = (len(task.system) + len(task.user_prompt(it))) / 3.5
-                usd += price(args.model, {"input_tokens": tin,
-                                          "output_tokens": args.assumed_output_tokens})
-            total += usd
-            print(f"{name}/{pipe}: {len(items)} new calls ~ ${usd:.2f}")
-    print(f"total ~ ${total:.2f} (rough upper bound: ignores prompt caching; "
-          f"assumes {args.assumed_output_tokens} output tokens per call incl. thinking)")
+    p = PRICING[args.model]
+    print(f"model {args.model}: ${p['input']}/MTok in, ${p['output']}/MTok out; max_tokens {MAX_TOKENS}; "
+          f"n={args.n} per task, seed {args.seed}")
+    rows = plan_live_calls(args)
+    for name, pipe, n, usd in rows:
+        print(f"{name}/{pipe}: {n} new calls, upper bound ${usd:.4f}")
+    total = sum(r[3] for r in rows)
+    print(f"total upper bound ${total:.4f} for {sum(r[2] for r in rows)} calls "
+          "(no caching, every call at max_tokens)")
     return 0
 
 
@@ -184,7 +222,7 @@ def build_parser() -> argparse.ArgumentParser:
                    help="replay cached LLM responses from results/cache/ (no API calls)")
     r.add_argument("--on-cache-miss", default="error", choices=["error", "skip", "review"],
                    help="offline only: fail, skip the pipeline, or route missing items to review")
-    r.add_argument("--max-cost-usd", type=float, default=5.0,
+    r.add_argument("--max-cost-usd", type=float, default=DEFAULT_MAX_COST_USD,
                    help="stop before spending more than this in one invocation")
     r.add_argument("--results-dir", default="results")
     r.add_argument("--cache-dir", default=None, help="default: <results-dir>/cache")
@@ -197,7 +235,8 @@ def build_parser() -> argparse.ArgumentParser:
     e = sub.add_parser("estimate", help="rough LLM cost estimate before a live run")
     common(e)
     e.add_argument("--model", default=DEFAULT_MODEL)
-    e.add_argument("--assumed-output-tokens", type=int, default=400)
+    e.add_argument("--effort", default=DEFAULT_EFFORT)
+    e.add_argument("--results-dir", default="results")
     e.set_defaults(func=cmd_estimate)
 
     v = sub.add_parser("verify", help="re-run offline and check committed results reproduce")

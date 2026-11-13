@@ -20,7 +20,7 @@ from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .config import DEFAULT_EFFORT, DEFAULT_MODEL, MAX_TOKENS, PRICING
+from .config import DEFAULT_EFFORT, DEFAULT_MODEL, MAX_TOKENS, PRICING, THINKING_OFF_MODELS
 
 
 class CacheMiss(RuntimeError):
@@ -39,7 +39,7 @@ class MissingKey(RuntimeError):
 class Budget:
     """Spend limit shared by every client in one CLI invocation (all tasks together)."""
 
-    limit_usd: float = 5.0
+    limit_usd: float = 1.0
     spent_usd: float = 0.0
 
 
@@ -83,11 +83,14 @@ def anthropic_backend(model: str, effort: str, max_tokens: int = MAX_TOKENS) -> 
 
     client = anthropic.Anthropic(api_key=key, max_retries=4)
 
+    extra = {"thinking": {"type": "disabled"}} if model in THINKING_OFF_MODELS else {}
+
     def call(system: str, user: str, schema: dict) -> dict:
         t0 = time.perf_counter()
         resp = client.messages.create(
             model=model,
             max_tokens=max_tokens,
+            **extra,
             system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": user}],
             output_config={

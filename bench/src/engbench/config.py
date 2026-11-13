@@ -10,10 +10,15 @@ from __future__ import annotations
 DEFAULT_SEED = 2026
 DEFAULT_N = 150
 
-# Default model for the LLM pipelines. Any current Claude model id can be passed with --model.
-DEFAULT_MODEL = "claude-opus-5-5"
-DEFAULT_EFFORT = "low"  # classification-style work; thinking cannot be disabled on Opus 5.5
-MAX_TOKENS = 4000
+# Default model for the LLM pipelines: the cheapest current Claude model (budget: USD 1 total).
+# Any current Claude model id can be passed with --model.
+DEFAULT_MODEL = "claude-haiku-5-5"
+DEFAULT_EFFORT = "low"
+# Thinking is turned off on models that allow it (Haiku 5.5 does at effort <= high), so the
+# answer is the JSON object alone; 256 tokens leave room for the largest schema (drawing: 4 fields).
+THINKING_OFF_MODELS = ("claude-haiku-5-5",)
+MAX_TOKENS = 256
+DEFAULT_MAX_COST_USD = 1.0
 
 # USD per million tokens (first-party API list prices, checked 2026-11).
 # cache_write = 1.25x input, cache_read = 0.1x input for 5-minute ephemeral caching.

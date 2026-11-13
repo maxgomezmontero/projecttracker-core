@@ -11,7 +11,7 @@ Python baseline ([`src/engbench/rules.py`](src/engbench/rules.py)).
 |---|---|
 | `rules` | The tool decides every item |
 | `rules_review` | Ablation without an LLM: rules decide when confidence ≥ the task threshold (email 0.88, the tool's own auto-attach level; milestone and drawing 0.85); everything else goes to human review |
-| `llm` | One call per item: `anthropic` SDK, structured outputs (`output_config.format`), `claude-opus-5-5` at `effort=low`, self-reported confidence. Refusals and malformed output go to review |
+| `llm` | One call per item: `anthropic` SDK, structured outputs (`output_config.format`), `claude-haiku-5-5` (the cheapest current model) with thinking off, `max_tokens` 256, a cached system prompt, self-reported confidence. Refusals and malformed output go to review |
 | `hybrid` | Rules when confident; otherwise the LLM decides if its confidence is ≥ 0.70; otherwise human review |
 
 Thresholds, costs and glue constants were fixed before the first run
@@ -46,6 +46,9 @@ curves; USD and latency per item; 95 % bootstrap CIs over items.
   tasks, at under half of `llm`'s USD per item.
 * **H4.** The LLM's stated confidence is worse calibrated (higher ECE) than the tool's.
 
+Budget note: the live run is limited to US$1 in total, so only the hybrid pipeline's low-confidence
+band is sent by default (`--pipeline hybrid`). Pure `llm` is one flag away (dry upper bound US$0.11).
+
 ## Reproduce
 
 ```bash
@@ -65,10 +68,12 @@ bench estimate --pipeline all --task all
 ```
 
 LLM runs read the key **only** from `ANTHROPIC_API_KEY` (no `.env` file is ever read), cache every
-response in `results/cache/`, and stop before spending more than `--max-cost-usd` (default 5):
+response in `results/cache/`, run a dry upper-bound estimate first (every call at `max_tokens`, no
+cache hits) and refuse to start if it exceeds `--max-cost-usd` (default 1); spending is also
+tracked call by call against the same limit:
 
 ```bash
-bench run --pipeline all --task all
+bench run --pipeline hybrid --task all
 ```
 
 Anyone can then replay the run without a key:

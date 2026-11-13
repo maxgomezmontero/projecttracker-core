@@ -42,3 +42,12 @@ def test_verify_reproduces_rules_results(tmp_path):
     data["accuracy"] = 0.0
     s.write_text(json.dumps(data))
     assert main(["verify", "--results-dir", str(tmp_path)]) == 1
+
+
+def test_preflight_gate_stops_before_any_call(tmp_path, capsys):
+    rc = main(["run", "--pipeline", "hybrid", "--task", "email", "--n", "20",
+               "--max-cost-usd", "0.000001", "--results-dir", str(tmp_path)])
+    assert rc == 5
+    out = capsys.readouterr().out
+    assert "No call was made" in out
+    assert not list((tmp_path / "cache").glob("*.jsonl")) if (tmp_path / "cache").exists() else True
