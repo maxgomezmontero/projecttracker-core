@@ -1,0 +1,14 @@
+{
+  "name": "projecttracker-core",
+  "version": "0.1.0",
+  "description": "Rules core extracted from ProjectTracker: weighted-evidence email matching, deterministic milestone detectors, a 44-criteria layout check and status hints. Plain Node, no dependencies.",
+  "license": "MIT",
+  "author": "Maximiliano Gomez Montero",
+  "main": "index.js",
+  "bin": { "ptcore": "cli/ptcore.js" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "files": ["index.js", "lib", "cli"]
+}

@@ -1,0 +1,25 @@
+{
+  "internalDomains": ["finishing-systems.example"],
+  "projects": [
+    {
+      "id": "p1", "projectNumber": "N26-6402", "name": "Ashford Powder Booth", "client": "Maplewood Metalworks",
+      "status": "In Progress", "lastUpdated": "2026-10-01",
+      "quotes": [{ "email": "sam.archer@maplewood-metal.example", "contact": "Sam Archer" }]
+    },
+    {
+      "id": "p2", "projectNumber": "N26-6418", "name": "Cure Oven Line 3", "client": "Maplewood Metalworks",
+      "status": "Quoting", "lastUpdated": "2026-09-20",
+      "quotes": [{ "email": "sam.archer@maplewood-metal.example", "contact": "Sam Archer" }]
+    },
+    {
+      "id": "p3", "projectNumber": "S25-4821", "name": "Riverton Blast Room", "client": "Harbor Point Fabrication",
+      "status": "In Progress", "lastUpdated": "2026-10-05",
+      "quotes": [{ "email": "robin.lowell@harborpoint-fab.example", "contact": "Robin Lowell    Dana Mercer" }]
+    },
+    {
+      "id": "p4", "projectNumber": "N25-4410", "name": "Wet Paint Booth Retrofit", "client": "Granite Rail Products",
+      "status": "Completed", "lastUpdated": "2025-12-01",
+      "quotes": [{ "email": "pat.oakley@granite-rail.example", "contact": "Pat Oakley" }]
+    }
+  ]
+}

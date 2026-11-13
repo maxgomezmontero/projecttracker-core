@@ -1,0 +1,134 @@
+{
+ "task": "drawing",
+ "pipeline": "rules_review",
+ "model": null,
+ "n_items": 150,
+ "n_units": 600,
+ "accuracy": 0.9633333333333334,
+ "macro_f1": 0.9528410502969759,
+ "per_class": {
+  "match": {
+   "precision": 0.9885386819484241,
+   "recall": 0.9663865546218487,
+   "f1": 0.9773371104815863,
+   "support": 357
+  },
+  "mismatch": {
+   "precision": 0.9074074074074074,
+   "recall": 1.0,
+   "f1": 0.9514563106796117,
+   "support": 147
+  },
+  "near_miss": {
+   "precision": 0.9662921348314607,
+   "recall": 0.8958333333333334,
+   "f1": 0.9297297297297298,
+   "support": 96
+  }
+ },
+ "review_rate": 0.02,
+ "auto_error_rate": 0.023333333333333334,
+ "auto_precision": 0.9761904761904762,
+ "cost_per_unit": 0.0625,
+ "routes": {
+  "rules": 588,
+  "review": 12
+ },
+ "calibration": {
+  "ece": 0.02886666666666657,
+  "brier": 0.029727666666666666,
+  "bins": [
+   {
+    "bin": 3,
+    "n": 12,
+    "mean_conf": 0.3,
+    "accuracy": 0.3333333333333333
+   },
+   {
+    "bin": 9,
+    "n": 588,
+    "mean_conf": 0.9474149659863946,
+    "accuracy": 0.9761904761904762
+   }
+  ]
+ },
+ "ci95": {
+  "accuracy": [
+   0.9483333333333334,
+   0.9766666666666667
+  ],
+  "cost_per_unit": [
+   0.03833333333333333,
+   0.09
+  ]
+ },
+ "usd_total": 0.0,
+ "usd_per_item": 0.0,
+ "llm_call_rate": 0.0,
+ "latency_s": {
+  "mean": 3.375666371236245e-05,
+  "p50": 2.95999925583601e-05,
+  "p95": 5.1900045946240425e-05
+ },
+ "errors": 0,
+ "by_case": {
+  "boundary": {
+   "n": 92,
+   "accuracy": 1.0,
+   "review_rate": 0.0
+  },
+  "boundary+unseen_format": {
+   "n": 52,
+   "accuracy": 0.8653846153846154,
+   "review_rate": 0.09615384615384616
+  },
+  "standard": {
+   "n": 276,
+   "accuracy": 1.0,
+   "review_rate": 0.0
+  },
+  "standard+unseen_format": {
+   "n": 180,
+   "accuracy": 0.9166666666666666,
+   "review_rate": 0.03888888888888889
+  }
+ },
+ "tradeoff": [
+  {
+   "threshold": 0.0,
+   "review_rate": 0.02,
+   "auto_error_rate": 0.023333333333333334,
+   "cost_per_unit": 0.0625
+  },
+  {
+   "threshold": 0.3,
+   "review_rate": 0.02,
+   "auto_error_rate": 0.023333333333333334,
+   "cost_per_unit": 0.0625
+  },
+  {
+   "threshold": 0.9,
+   "review_rate": 0.02,
+   "auto_error_rate": 0.023333333333333334,
+   "cost_per_unit": 0.0625
+  },
+  {
+   "threshold": 0.95,
+   "review_rate": 0.27,
+   "auto_error_rate": 0.023333333333333334,
+   "cost_per_unit": 0.3125
+  },
+  {
+   "threshold": 0.97,
+   "review_rate": 0.5016666666666667,
+   "auto_error_rate": 0.018333333333333333,
+   "cost_per_unit": 0.5358333333333334
+  },
+  {
+   "threshold": 1.01,
+   "review_rate": 1.0,
+   "auto_error_rate": 0.0,
+   "cost_per_unit": 1.0
+  }
+ ]
+}

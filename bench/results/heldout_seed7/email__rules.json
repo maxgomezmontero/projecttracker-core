@@ -1,0 +1,3996 @@
+{
+ "task": "email",
+ "pipeline": "rules",
+ "model": null,
+ "meta": {
+  "rules_accept": null,
+  "llm_accept": null,
+  "effort": null,
+  "n_items": 150,
+  "seed": 7,
+  "n": 150
+ },
+ "units": [
+  {
+   "item_id": "E0000",
+   "field": "",
+   "case": "project_number",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-5235",
+     "contact chris.bennett@maplewood-metal.example (shared by 2 projects)",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact chris bennett (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0001",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 4771\"",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0002",
+   "field": "",
+   "case": "project_number",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-4484",
+     "contact morgan.hollis@maplewood-metal.example",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact morgan hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0003",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p10",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0004",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-4771",
+     "mentions casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0005",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0006",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 4506\"",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0007",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)",
+     "mentions \"riverton\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0008",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p09",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0009",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact casey.oakley@harborpoint-fab.example",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact casey oakley"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0010",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "\"glenrock\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0011",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.5,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "mentions morgan hollis"
+    ],
+    "tool_confidence": 0.5,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0012",
+   "field": "",
+   "case": "newsletter_client_case_study",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client \"ridgeline\" in subject (shared by 2 projects)",
+     "client \"agri\" in subject (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.28,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0013",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0014",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N414328",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0015",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact chris.bennett@maplewood-metal.example (shared by 2 projects)",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact chris bennett (shared by 2 projects)",
+     "mentions \"kestrel\""
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0016",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP025624",
+     "contact morgan.norwood@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact morgan norwood"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0017",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact avery.jarvis@lakeshore-appliance.example",
+     "client domain lakeshore-appliance.example",
+     "contact avery jarvis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0018",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.52,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client \"cedar\" in the mail text",
+     "client \"valley\" in the mail text",
+     "client \"trailers\" in the mail text"
+    ],
+    "tool_confidence": 0.52,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0019",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0020",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0021",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0022",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p01",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0023",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p03",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0024",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-7425",
+     "mentions casey dawson"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0025",
+   "field": "",
+   "case": "project_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4395",
+     "contact morgan.norwood@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact morgan norwood"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0026",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0027",
+   "field": "",
+   "case": "project_number",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4506",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0028",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.5,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "mentions casey dawson"
+    ],
+    "tool_confidence": 0.5,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0029",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain lakeshore-appliance.example",
+     "\"fernhill\" in subject"
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0030",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0031",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-5235",
+     "mentions riley jarvis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0032",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "internal, no work keywords"
+   }
+  },
+  {
+   "item_id": "E0033",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0034",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)",
+     "mentions \"marlow\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0035",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)",
+     "mentions \"riverton\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0036",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-8389",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0037",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 5235\"",
+     "contact chris.bennett@maplewood-metal.example (shared by 2 projects)",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact chris bennett (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0038",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact lee.mercer@harborpoint-fab.example (shared by 2 projects)",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact lee mercer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0039",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP049810",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0040",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "internal, no work keywords"
+   }
+  },
+  {
+   "item_id": "E0041",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "internal, no work keywords"
+   }
+  },
+  {
+   "item_id": "E0042",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 5014\"",
+     "contact casey.oakley@harborpoint-fab.example",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact casey oakley"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0043",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 8156\"",
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0044",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0045",
+   "field": "",
+   "case": "redirected_thread",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-6652",
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0046",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact casey.dawson@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact casey dawson"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0047",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "\"kestrel\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0048",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N315963",
+     "contact pat.lowell@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact pat lowell"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0049",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N813451",
+     "contact lee.mercer@harborpoint-fab.example (shared by 2 projects)",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact lee mercer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0050",
+   "field": "",
+   "case": "unrelated_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0051",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain example-industries.example (shared by 2 projects)",
+     "\"marlow\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0052",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N414328",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0053",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "internal, no work keywords"
+   }
+  },
+  {
+   "item_id": "E0054",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.4,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0055",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)",
+     "mentions \"marlow\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0056",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP077231",
+     "mentions pat lowell"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0057",
+   "field": "",
+   "case": "project_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4395",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0058",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.84,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "\"riverton\" in subject",
+     "talks about execution (the client's project in progress)"
+    ],
+    "tool_confidence": 0.84,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0059",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N315963",
+     "contact pat.lowell@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact pat lowell"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0060",
+   "field": "",
+   "case": "project_number",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4506",
+     "contact jesse.ingram@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact jesse ingram"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0061",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "\"riverton\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0062",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain granite-rail.example",
+     "\"elsworth\" in subject"
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0063",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact jesse.ingram@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact jesse ingram"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0064",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p01",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0065",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0066",
+   "field": "",
+   "case": "project_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-8156",
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0067",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact jesse.ingram@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact jesse ingram"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0068",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP049810",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0069",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N914983",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0070",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N548363",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0071",
+   "field": "",
+   "case": "erp_opp",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP013770",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0072",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)",
+     "mentions \"riverton\""
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0073",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain example-industries.example (shared by 2 projects)",
+     "\"brookfield\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0074",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact pat.lowell@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact pat lowell"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0075",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact casey.oakley@harborpoint-fab.example",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact casey oakley"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0076",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4506",
+     "mentions lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0077",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N575198",
+     "contact morgan.hollis@maplewood-metal.example",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact morgan hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0078",
+   "field": "",
+   "case": "project_number",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4506",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0079",
+   "field": "",
+   "case": "redirected_thread",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-7425",
+     "contact casey.dawson@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact casey dawson"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0080",
+   "field": "",
+   "case": "project_number",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-6652",
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0081",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.52,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client \"granite\" in the mail text",
+     "client \"rail\" in the mail text"
+    ],
+    "tool_confidence": 0.52,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0082",
+   "field": "",
+   "case": "project_number",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-7425",
+     "contact casey.dawson@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact casey dawson"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0083",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact chris.bennett@maplewood-metal.example (shared by 2 projects)",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact chris bennett (shared by 2 projects)",
+     "mentions \"kestrel\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0084",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p02",
+   "pred": "p02",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP075868",
+     "mentions chris bennett (shared by 2 projects)",
+     "talks about execution (the client's project in progress)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0085",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N657549",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0086",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)",
+     "mentions \"marlow\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0087",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0088",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0089",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact pat.lowell@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact pat lowell"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0090",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N479146",
+     "contact casey.oakley@harborpoint-fab.example",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact casey oakley"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0091",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-8389",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0092",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)",
+     "mentions \"marlow\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0093",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p08",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0094",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p08",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0095",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p03",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.mercer@harborpoint-fab.example (shared by 2 projects)",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact lee mercer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.4,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0096",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 5014\"",
+     "contact lee.mercer@harborpoint-fab.example (shared by 2 projects)",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact lee mercer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0097",
+   "field": "",
+   "case": "internal_noise",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "internal, no work keywords"
+   }
+  },
+  {
+   "item_id": "E0098",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact chris.calder@harborpoint-fab.example",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact chris calder"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0099",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-8156",
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0100",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0101",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0102",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0103",
+   "field": "",
+   "case": "project_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-8156",
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0104",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0105",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N315963",
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0106",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-9332",
+     "mentions lee mercer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0107",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0108",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "\"westbury\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0109",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p03",
+   "pred": "p02",
+   "confidence": 0.62,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact chris bennett (shared by 2 projects)",
+     "talks about execution (the client's project in progress)"
+    ],
+    "tool_confidence": 0.62,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0110",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 5758\"",
+     "contact avery.jarvis@lakeshore-appliance.example",
+     "client domain lakeshore-appliance.example",
+     "contact avery jarvis"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0111",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N548363",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0112",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact morgan.norwood@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact morgan norwood",
+     "talks about execution (the client's project in progress)"
+    ],
+    "tool_confidence": 0.9,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0113",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0114",
+   "field": "",
+   "case": "bare_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.94,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "\"job 4395\"",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.94,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0115",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain lakeshore-appliance.example",
+     "\"fernhill\" in subject"
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0116",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "\"riverton\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0117",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0118",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0119",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain granite-rail.example",
+     "\"elsworth\" in subject"
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0120",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p06",
+   "pred": "p06",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N914983",
+     "contact casey.ellery@cedarvalley-trailers.example",
+     "client domain cedarvalley-trailers.example",
+     "contact casey ellery"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0121",
+   "field": "",
+   "case": "project_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4395",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0122",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "opportunity OP072793",
+     "mentions alex prescott"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0123",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-5758",
+     "contact avery.jarvis@lakeshore-appliance.example",
+     "client domain lakeshore-appliance.example",
+     "contact avery jarvis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0124",
+   "field": "",
+   "case": "project_number",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-7425",
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0125",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0126",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p11",
+   "pred": "p11",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "\"ashford\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0127",
+   "field": "",
+   "case": "project_number",
+   "truth": "p03",
+   "pred": "p03",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-9332",
+     "contact chris.calder@harborpoint-fab.example",
+     "client domain harborpoint-fab.example (shared by 2 projects)",
+     "contact chris calder"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0128",
+   "field": "",
+   "case": "forwarded",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.5,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "mentions lee hollis"
+    ],
+    "tool_confidence": 0.5,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0129",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0130",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0131",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.74,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain lakeshore-appliance.example",
+     "\"fernhill\" in subject"
+    ],
+    "tool_confidence": 0.74,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0132",
+   "field": "",
+   "case": "domain_place",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.72,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "client domain example-industries.example (shared by 2 projects)",
+     "\"marlow\" in subject"
+    ],
+    "tool_confidence": 0.72,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0133",
+   "field": "",
+   "case": "project_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4395",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0134",
+   "field": "",
+   "case": "project_number",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4395",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0135",
+   "field": "",
+   "case": "unseen:third_party",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.8,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0136",
+   "field": "",
+   "case": "two_projects",
+   "truth": "p04",
+   "pred": "p04",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-4395",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0137",
+   "field": "",
+   "case": "project_number",
+   "truth": "p08",
+   "pred": "p08",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N25-5758",
+     "contact avery.jarvis@lakeshore-appliance.example",
+     "client domain lakeshore-appliance.example",
+     "contact avery jarvis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0138",
+   "field": "",
+   "case": "newsletter",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [],
+    "tool_confidence": 0.0,
+    "noise": "automated sender"
+   }
+  },
+  {
+   "item_id": "E0139",
+   "field": "",
+   "case": "vendor_order",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "Northbeam order N548363",
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0140",
+   "field": "",
+   "case": "typo_number",
+   "truth": "p04",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.4,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0141",
+   "field": "",
+   "case": "project_number",
+   "truth": "p10",
+   "pred": "p10",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-4484",
+     "contact chris.bennett@maplewood-metal.example (shared by 2 projects)",
+     "client domain maplewood-metal.example (shared by 2 projects)",
+     "contact chris bennett (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0142",
+   "field": "",
+   "case": "project_number",
+   "truth": "p01",
+   "pred": "p01",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-6652",
+     "contact pat.lowell@example-industries.example",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact pat lowell"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0143",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact jesse.ingram@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact jesse ingram"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0144",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact jesse.ingram@ridgeline-agri.example",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact jesse ingram"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0145",
+   "field": "",
+   "case": "unseen:misspelt_place",
+   "truth": "p03",
+   "pred": "p11",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact casey oakley"
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0146",
+   "field": "",
+   "case": "thread_reply",
+   "truth": "p12",
+   "pred": "p12",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "same email thread as an earlier match",
+     "contact lee.ingram@ridgeline-agri.example (shared by 2 projects)",
+     "client domain ridgeline-agri.example (shared by 2 projects)",
+     "contact lee ingram (shared by 2 projects)"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0147",
+   "field": "",
+   "case": "contact_shared_hint",
+   "truth": "p09",
+   "pred": "p09",
+   "confidence": 0.55,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact robin.archer@example-industries.example (shared by 2 projects)",
+     "client domain example-industries.example (shared by 2 projects)",
+     "contact robin archer (shared by 2 projects)",
+     "mentions \"marlow\""
+    ],
+    "tool_confidence": 0.55,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0148",
+   "field": "",
+   "case": "project_number",
+   "truth": "p07",
+   "pred": "p07",
+   "confidence": 0.99,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "project number N26-8156",
+     "contact alex.prescott@granite-rail.example",
+     "client domain granite-rail.example",
+     "contact alex prescott"
+    ],
+    "tool_confidence": 0.99,
+    "noise": null
+   }
+  },
+  {
+   "item_id": "E0149",
+   "field": "",
+   "case": "contact_unique",
+   "truth": "p05",
+   "pred": "p05",
+   "confidence": 0.78,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "reasons": [
+     "contact lee.hollis@bluewater-marine.example",
+     "client domain bluewater-marine.example",
+     "contact lee hollis"
+    ],
+    "tool_confidence": 0.78,
+    "noise": null
+   }
+  }
+ ],
+ "traces": [
+  {
+   "item_id": "E0000",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 0.18495779996737838,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0001",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4099990949034691e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0002",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 7.200054824352264e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0003",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 8.600065484642982e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0004",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.299923941493034e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0005",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.3998082876205444e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0006",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.100147634744644e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0007",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.700144588947296e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0008",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.899913281202316e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0009",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.0999071896076202e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0010",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.200024366378784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0011",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.0999071896076202e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0012",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 6.90016895532608e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0013",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.300141543149948e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0014",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.600027412176132e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0015",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.0999071896076202e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0016",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.00002284348011e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0017",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.499902620911598e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0018",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8999056667089462e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0019",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.060000017285347e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0020",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.8000289350748062e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0021",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.200031980872154e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0022",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.09991480410099e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0023",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.700144588947296e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0024",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.600027412176132e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0025",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.600027412176132e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0026",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.899913281202316e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0027",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.200024366378784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0028",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.90014611184597e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0029",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 7.899943739175797e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0030",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.2999087125062943e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0031",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7997884899377823e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0032",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.300141543149948e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0033",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9997900128364563e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0034",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.400025889277458e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0035",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.00002284348011e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0036",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.300141543149948e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0037",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9001384973526e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0038",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.2999087125062943e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0039",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.499902620911598e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0040",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.400025889277458e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0041",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.500135451555252e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0042",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8999056667089462e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0043",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.400025889277458e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0044",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9001384973526e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0045",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9997900128364563e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0046",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.200024366378784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0047",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.200024366378784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0048",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.600019797682762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0049",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.800021320581436e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0050",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 6.4999330788850784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0051",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.100140020251274e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0052",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.2999087125062943e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0053",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8999056667089462e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0054",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 6.200047209858894e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0055",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0056",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0057",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0058",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.499917849898338e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0059",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.90013088285923e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0060",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0061",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.309998333454132e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0062",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.00002284348011e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0063",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9997900128364563e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0064",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.2999087125062943e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0065",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0066",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.500158295035362e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0067",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.9997823983430862e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0068",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0069",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.8000289350748062e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0070",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0071",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0072",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.09989957511425e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0073",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0074",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0075",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0076",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0077",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0078",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0079",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.3799872249364853e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0080",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.659996531903744e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0081",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.00003807246685e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0082",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.400018274784088e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0083",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0084",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.699926987290382e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0085",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0086",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0087",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.00002284348011e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0088",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.90013088285923e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0089",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0090",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0091",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0092",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.619996666908264e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0093",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.299923941493034e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0094",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0095",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.700152203440666e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0096",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.600019797682762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0097",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.800021320581436e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0098",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.500135451555252e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0099",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.269982360303402e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0100",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.400025889277458e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0101",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.100132405757904e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0102",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.00002284348011e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0103",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0104",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0105",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0106",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0107",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.90013088285923e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0108",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0109",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0110",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0111",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0112",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0113",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0114",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.8000289350748062e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0115",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0116",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0117",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.8998980522155762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0118",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0119",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.8998980522155762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0120",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.499902620911598e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0121",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0122",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0123",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0124",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0125",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.90013088285923e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0126",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0127",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0128",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0129",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0130",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0131",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.0999071896076202e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0132",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.800044164061546e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0133",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0134",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0135",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.200024366378784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0136",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 0.00010469998233020306,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0137",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6999041438102722e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0138",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.200024366378784e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0139",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0140",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.5997945815324783e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0141",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0142",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0143",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0144",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0145",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.500143066048622e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0146",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.09989957511425e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0147",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0148",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "E0149",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  }
+ ]
+}

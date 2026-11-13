@@ -1,0 +1,9017 @@
+{
+ "task": "drawing",
+ "pipeline": "rules",
+ "model": null,
+ "meta": {
+  "rules_accept": null,
+  "llm_accept": null,
+  "effort": null,
+  "n_items": 150,
+  "seed": 7,
+  "n": 150
+ },
+ "units": [
+  {
+   "item_id": "D0000",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->171.0"
+   }
+  },
+  {
+   "item_id": "D0000",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "228.0->228.0"
+   }
+  },
+  {
+   "item_id": "D0000",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0000",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0001",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->49.0"
+   }
+  },
+  {
+   "item_id": "D0001",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "276.0->276.0"
+   }
+  },
+  {
+   "item_id": "D0001",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0001",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0002",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->338.1891101916022"
+   }
+  },
+  {
+   "item_id": "D0002",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->216.0"
+   }
+  },
+  {
+   "item_id": "D0002",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0002",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0003",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->400.0"
+   }
+  },
+  {
+   "item_id": "D0003",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->277.0"
+   }
+  },
+  {
+   "item_id": "D0003",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0003",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0004",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->319.0"
+   }
+  },
+  {
+   "item_id": "D0004",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "336.0->376.496062992126"
+   }
+  },
+  {
+   "item_id": "D0004",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0004",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0005",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->73.0"
+   }
+  },
+  {
+   "item_id": "D0005",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->198.0"
+   }
+  },
+  {
+   "item_id": "D0005",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0005",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0006",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->75.0"
+   }
+  },
+  {
+   "item_id": "D0006",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "288.0->288.0"
+   }
+  },
+  {
+   "item_id": "D0006",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0006",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0007",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->324.96137446050955"
+   }
+  },
+  {
+   "item_id": "D0007",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "234.0->228.0"
+   }
+  },
+  {
+   "item_id": "D0007",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0007",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0008",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0008",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "222.0->216.0"
+   }
+  },
+  {
+   "item_id": "D0008",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0008",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0009",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->324.96137446050955"
+   }
+  },
+  {
+   "item_id": "D0009",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->210.0"
+   }
+  },
+  {
+   "item_id": "D0009",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0009",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0010",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0010",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "174.0->174.0"
+   }
+  },
+  {
+   "item_id": "D0010",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0010",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->split"
+   }
+  },
+  {
+   "item_id": "D0011",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->250.0"
+   }
+  },
+  {
+   "item_id": "D0011",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0011",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0011",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0012",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->175.0"
+   }
+  },
+  {
+   "item_id": "D0012",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "354.0->354.01574803149606"
+   }
+  },
+  {
+   "item_id": "D0012",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0012",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0013",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->448.0"
+   }
+  },
+  {
+   "item_id": "D0013",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "306.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0013",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0013",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0014",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->325.0"
+   }
+  },
+  {
+   "item_id": "D0014",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "312.0->312.0"
+   }
+  },
+  {
+   "item_id": "D0014",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0014",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->split"
+   }
+  },
+  {
+   "item_id": "D0015",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->333.0"
+   }
+  },
+  {
+   "item_id": "D0015",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "318.0->310.90551181102364"
+   }
+  },
+  {
+   "item_id": "D0015",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0015",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0016",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->175.0"
+   }
+  },
+  {
+   "item_id": "D0016",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "258.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0016",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0016",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0017",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0017",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "234.0->180.0"
+   }
+  },
+  {
+   "item_id": "D0017",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0017",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0018",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0018",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "234.0->281.76"
+   }
+  },
+  {
+   "item_id": "D0018",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0018",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0019",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->175.0"
+   }
+  },
+  {
+   "item_id": "D0019",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "222.0->222.0"
+   }
+  },
+  {
+   "item_id": "D0019",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0019",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0020",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->325.0"
+   }
+  },
+  {
+   "item_id": "D0020",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->204.0"
+   }
+  },
+  {
+   "item_id": "D0020",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0020",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0021",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->150.0"
+   }
+  },
+  {
+   "item_id": "D0021",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "360.0->363.0"
+   }
+  },
+  {
+   "item_id": "D0021",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0021",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0022",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->275.0"
+   }
+  },
+  {
+   "item_id": "D0022",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->157.0"
+   }
+  },
+  {
+   "item_id": "D0022",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0022",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0023",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->325.0"
+   }
+  },
+  {
+   "item_id": "D0023",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "168.0->167.99212598425197"
+   }
+  },
+  {
+   "item_id": "D0023",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0023",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0024",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->269.0"
+   }
+  },
+  {
+   "item_id": "D0024",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "180.0->180.0"
+   }
+  },
+  {
+   "item_id": "D0024",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0024",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0025",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "125.0->125.0"
+   }
+  },
+  {
+   "item_id": "D0025",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "174.0->174.0"
+   }
+  },
+  {
+   "item_id": "D0025",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0025",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0026",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->100.0"
+   }
+  },
+  {
+   "item_id": "D0026",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "234.0->228.0"
+   }
+  },
+  {
+   "item_id": "D0026",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0026",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0027",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->150.0"
+   }
+  },
+  {
+   "item_id": "D0027",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "306.0->296.0"
+   }
+  },
+  {
+   "item_id": "D0027",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0027",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->split"
+   }
+  },
+  {
+   "item_id": "D0028",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->355.0"
+   }
+  },
+  {
+   "item_id": "D0028",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "228.0->172.08661417322836"
+   }
+  },
+  {
+   "item_id": "D0028",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0028",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0029",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->317.6861198084086"
+   }
+  },
+  {
+   "item_id": "D0029",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->342.0"
+   }
+  },
+  {
+   "item_id": "D0029",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0029",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0030",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->182.0"
+   }
+  },
+  {
+   "item_id": "D0030",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "168.0->157.55905511811025"
+   }
+  },
+  {
+   "item_id": "D0030",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0030",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0031",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->350.0"
+   }
+  },
+  {
+   "item_id": "D0031",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "180.0->216.69291338582678"
+   }
+  },
+  {
+   "item_id": "D0031",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0031",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0032",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->74.51624461848861"
+   }
+  },
+  {
+   "item_id": "D0032",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->234.0"
+   }
+  },
+  {
+   "item_id": "D0032",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0032",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0033",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0033",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "282.0->276.0"
+   }
+  },
+  {
+   "item_id": "D0033",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0033",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0034",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->175.0"
+   }
+  },
+  {
+   "item_id": "D0034",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "312.0->312.00787401574803"
+   }
+  },
+  {
+   "item_id": "D0034",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0034",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0035",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0035",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->306.96"
+   }
+  },
+  {
+   "item_id": "D0035",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0035",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0036",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->75.0"
+   }
+  },
+  {
+   "item_id": "D0036",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "252.0->253.07999999999998"
+   }
+  },
+  {
+   "item_id": "D0036",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0036",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0037",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->350.0940723495856"
+   }
+  },
+  {
+   "item_id": "D0037",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->245.0"
+   }
+  },
+  {
+   "item_id": "D0037",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0037",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0038",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->350.0"
+   }
+  },
+  {
+   "item_id": "D0038",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->310.0"
+   }
+  },
+  {
+   "item_id": "D0038",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0038",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0039",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->50.04493351596721"
+   }
+  },
+  {
+   "item_id": "D0039",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "324.0->324.01574803149606"
+   }
+  },
+  {
+   "item_id": "D0039",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0039",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0040",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->272.0"
+   }
+  },
+  {
+   "item_id": "D0040",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->336.0"
+   }
+  },
+  {
+   "item_id": "D0040",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0040",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0041",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->72.75254652100959"
+   }
+  },
+  {
+   "item_id": "D0041",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->322.0"
+   }
+  },
+  {
+   "item_id": "D0041",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0041",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0042",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->48.94262220504282"
+   }
+  },
+  {
+   "item_id": "D0042",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->291.0"
+   }
+  },
+  {
+   "item_id": "D0042",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0042",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0043",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->51.147244826891594"
+   }
+  },
+  {
+   "item_id": "D0043",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "288.0->288.0"
+   }
+  },
+  {
+   "item_id": "D0043",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0043",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0044",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->397.934383243704"
+   }
+  },
+  {
+   "item_id": "D0044",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "276.0->276.0"
+   }
+  },
+  {
+   "item_id": "D0044",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0044",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0045",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.0"
+   }
+  },
+  {
+   "item_id": "D0045",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->302.0"
+   }
+  },
+  {
+   "item_id": "D0045",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0045",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0046",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->468.0"
+   }
+  },
+  {
+   "item_id": "D0046",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "360.0->360.0"
+   }
+  },
+  {
+   "item_id": "D0046",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0046",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0047",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->74.95716914285838"
+   }
+  },
+  {
+   "item_id": "D0047",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->198.0"
+   }
+  },
+  {
+   "item_id": "D0047",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0047",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0048",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.0"
+   }
+  },
+  {
+   "item_id": "D0048",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->342.0"
+   }
+  },
+  {
+   "item_id": "D0048",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0048",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0049",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->250.0"
+   }
+  },
+  {
+   "item_id": "D0049",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "288.0->212.0"
+   }
+  },
+  {
+   "item_id": "D0049",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0049",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0050",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->304.0"
+   }
+  },
+  {
+   "item_id": "D0050",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->262.7165354330709"
+   }
+  },
+  {
+   "item_id": "D0050",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0050",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0051",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->384.0452607260567"
+   }
+  },
+  {
+   "item_id": "D0051",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->342.0"
+   }
+  },
+  {
+   "item_id": "D0051",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0051",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0052",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->150.0"
+   }
+  },
+  {
+   "item_id": "D0052",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "288.0->288.0"
+   }
+  },
+  {
+   "item_id": "D0052",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0052",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0053",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->350.0"
+   }
+  },
+  {
+   "item_id": "D0053",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "228.0->232.0"
+   }
+  },
+  {
+   "item_id": "D0053",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0053",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0054",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->400.0"
+   }
+  },
+  {
+   "item_id": "D0054",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->399.0"
+   }
+  },
+  {
+   "item_id": "D0054",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0054",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0055",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->63.27266924705986"
+   }
+  },
+  {
+   "item_id": "D0055",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.0"
+   }
+  },
+  {
+   "item_id": "D0055",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0055",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0056",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->221.0"
+   }
+  },
+  {
+   "item_id": "D0056",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "174.0->176.0"
+   }
+  },
+  {
+   "item_id": "D0056",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0056",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->split"
+   }
+  },
+  {
+   "item_id": "D0057",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->255.0"
+   }
+  },
+  {
+   "item_id": "D0057",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "348.0->347.99212598425197"
+   }
+  },
+  {
+   "item_id": "D0057",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0057",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0058",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->50.0"
+   }
+  },
+  {
+   "item_id": "D0058",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "360.0->360.0"
+   }
+  },
+  {
+   "item_id": "D0058",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0058",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0059",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.0"
+   }
+  },
+  {
+   "item_id": "D0059",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0059",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0059",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0060",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->413.0"
+   }
+  },
+  {
+   "item_id": "D0060",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->262.0"
+   }
+  },
+  {
+   "item_id": "D0060",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0060",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->split"
+   }
+  },
+  {
+   "item_id": "D0061",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->256.0"
+   }
+  },
+  {
+   "item_id": "D0061",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->330.0"
+   }
+  },
+  {
+   "item_id": "D0061",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0061",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0062",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->259.0"
+   }
+  },
+  {
+   "item_id": "D0062",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "174.0->174.0"
+   }
+  },
+  {
+   "item_id": "D0062",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0062",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0063",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->325.0"
+   }
+  },
+  {
+   "item_id": "D0063",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->336.0"
+   }
+  },
+  {
+   "item_id": "D0063",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0063",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0064",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->221.1236489714322"
+   }
+  },
+  {
+   "item_id": "D0064",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "276.0->275.98425196850394"
+   }
+  },
+  {
+   "item_id": "D0064",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0064",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0065",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->257.05899770756724"
+   }
+  },
+  {
+   "item_id": "D0065",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "360.0->369.0"
+   }
+  },
+  {
+   "item_id": "D0065",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0065",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0066",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.0"
+   }
+  },
+  {
+   "item_id": "D0066",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.01574803149606"
+   }
+  },
+  {
+   "item_id": "D0066",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0066",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0067",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->59.74527305210182"
+   }
+  },
+  {
+   "item_id": "D0067",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "222.0->222.0"
+   }
+  },
+  {
+   "item_id": "D0067",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0067",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0068",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->175.0"
+   }
+  },
+  {
+   "item_id": "D0068",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->268.0"
+   }
+  },
+  {
+   "item_id": "D0068",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0068",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0069",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->244.93357328739896"
+   }
+  },
+  {
+   "item_id": "D0069",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->216.0"
+   }
+  },
+  {
+   "item_id": "D0069",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0069",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0070",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->298.0"
+   }
+  },
+  {
+   "item_id": "D0070",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->342.0"
+   }
+  },
+  {
+   "item_id": "D0070",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0070",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0071",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->200.0"
+   }
+  },
+  {
+   "item_id": "D0071",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "222.0->222.95275590551182"
+   }
+  },
+  {
+   "item_id": "D0071",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0071",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->customer"
+   }
+  },
+  {
+   "item_id": "D0072",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->255.0"
+   }
+  },
+  {
+   "item_id": "D0072",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "228.0->192.0"
+   }
+  },
+  {
+   "item_id": "D0072",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0072",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0073",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->73.19347104537935"
+   }
+  },
+  {
+   "item_id": "D0073",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "360.0->348.0"
+   }
+  },
+  {
+   "item_id": "D0073",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0073",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0074",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->153.0"
+   }
+  },
+  {
+   "item_id": "D0074",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0074",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0074",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0075",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->199.95927180168397"
+   }
+  },
+  {
+   "item_id": "D0075",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->210.0"
+   }
+  },
+  {
+   "item_id": "D0075",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0075",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0076",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->269.0"
+   }
+  },
+  {
+   "item_id": "D0076",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "240.0->240.0"
+   }
+  },
+  {
+   "item_id": "D0076",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0076",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0077",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->56.0"
+   }
+  },
+  {
+   "item_id": "D0077",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->348.0"
+   }
+  },
+  {
+   "item_id": "D0077",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0077",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0078",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->205.0"
+   }
+  },
+  {
+   "item_id": "D0078",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->330.0"
+   }
+  },
+  {
+   "item_id": "D0078",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0078",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->split"
+   }
+  },
+  {
+   "item_id": "D0079",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->50.0"
+   }
+  },
+  {
+   "item_id": "D0079",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->301.496062992126"
+   }
+  },
+  {
+   "item_id": "D0079",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0079",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0080",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->203.0"
+   }
+  },
+  {
+   "item_id": "D0080",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "312.0->312.0"
+   }
+  },
+  {
+   "item_id": "D0080",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0080",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0081",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0081",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0081",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0081",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0082",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->399.91854360336794"
+   }
+  },
+  {
+   "item_id": "D0082",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "276.0->276.0"
+   }
+  },
+  {
+   "item_id": "D0082",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0082",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0083",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->324.96137446050955"
+   }
+  },
+  {
+   "item_id": "D0083",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->192.0"
+   }
+  },
+  {
+   "item_id": "D0083",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0083",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0084",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.09196969075998"
+   }
+  },
+  {
+   "item_id": "D0084",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->210.0"
+   }
+  },
+  {
+   "item_id": "D0084",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0084",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0085",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->400.0"
+   }
+  },
+  {
+   "item_id": "D0085",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->191.0"
+   }
+  },
+  {
+   "item_id": "D0085",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0085",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0086",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->518.0"
+   }
+  },
+  {
+   "item_id": "D0086",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->270.0"
+   }
+  },
+  {
+   "item_id": "D0086",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0086",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0087",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->300.0491388336184"
+   }
+  },
+  {
+   "item_id": "D0087",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "294.0->276.0"
+   }
+  },
+  {
+   "item_id": "D0087",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0087",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0088",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->77.0"
+   }
+  },
+  {
+   "item_id": "D0088",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "276.0->276.0"
+   }
+  },
+  {
+   "item_id": "D0088",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0088",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0089",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->399.91854360336794"
+   }
+  },
+  {
+   "item_id": "D0089",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "246.0->246.0"
+   }
+  },
+  {
+   "item_id": "D0089",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0089",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0090",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->151.0"
+   }
+  },
+  {
+   "item_id": "D0090",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "354.0->354.01574803149606"
+   }
+  },
+  {
+   "item_id": "D0090",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0090",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0091",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->100.08986703193442"
+   }
+  },
+  {
+   "item_id": "D0091",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.01574803149606"
+   }
+  },
+  {
+   "item_id": "D0091",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0091",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0092",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->146.82786661512844"
+   }
+  },
+  {
+   "item_id": "D0092",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->221.0"
+   }
+  },
+  {
+   "item_id": "D0092",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0092",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0093",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->324.96137446050955"
+   }
+  },
+  {
+   "item_id": "D0093",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "168.0->129.68503937007875"
+   }
+  },
+  {
+   "item_id": "D0093",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0093",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->split"
+   }
+  },
+  {
+   "item_id": "D0094",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->220.0"
+   }
+  },
+  {
+   "item_id": "D0094",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "318.0->318.0"
+   }
+  },
+  {
+   "item_id": "D0094",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0094",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0095",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0063079764767"
+   }
+  },
+  {
+   "item_id": "D0095",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->198.0"
+   }
+  },
+  {
+   "item_id": "D0095",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0095",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0096",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0096",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "180.0->180.0"
+   }
+  },
+  {
+   "item_id": "D0096",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0096",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0097",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->74.95716914285838"
+   }
+  },
+  {
+   "item_id": "D0097",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "324.0->324.0"
+   }
+  },
+  {
+   "item_id": "D0097",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0097",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0098",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "75.0->75.0"
+   }
+  },
+  {
+   "item_id": "D0098",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "294.0->294.0"
+   }
+  },
+  {
+   "item_id": "D0098",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0098",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0099",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->100.0"
+   }
+  },
+  {
+   "item_id": "D0099",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->307.0"
+   }
+  },
+  {
+   "item_id": "D0099",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0099",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0100",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.0"
+   }
+  },
+  {
+   "item_id": "D0100",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "306.0->309.0"
+   }
+  },
+  {
+   "item_id": "D0100",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0100",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0101",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->278.0"
+   }
+  },
+  {
+   "item_id": "D0101",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->334.8425196850394"
+   }
+  },
+  {
+   "item_id": "D0101",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'near_miss', 'match']"
+   }
+  },
+  {
+   "item_id": "D0101",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0102",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->271.3890447495843"
+   }
+  },
+  {
+   "item_id": "D0102",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "234.0->234.0"
+   }
+  },
+  {
+   "item_id": "D0102",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0102",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0103",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->275.0"
+   }
+  },
+  {
+   "item_id": "D0103",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->215.98425196850394"
+   }
+  },
+  {
+   "item_id": "D0103",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0103",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0104",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->201.28204537479323"
+   }
+  },
+  {
+   "item_id": "D0104",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "240.0->246.0"
+   }
+  },
+  {
+   "item_id": "D0104",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0104",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0105",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->197.0"
+   }
+  },
+  {
+   "item_id": "D0105",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "234.0->234.0"
+   }
+  },
+  {
+   "item_id": "D0105",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0105",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0106",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->383.604336201687"
+   }
+  },
+  {
+   "item_id": "D0106",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->263.52"
+   }
+  },
+  {
+   "item_id": "D0106",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0106",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0107",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->199.95927180168397"
+   }
+  },
+  {
+   "item_id": "D0107",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->238.79999999999998"
+   }
+  },
+  {
+   "item_id": "D0107",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'near_miss', 'match']"
+   }
+  },
+  {
+   "item_id": "D0107",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0108",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->51.147244826891594"
+   }
+  },
+  {
+   "item_id": "D0108",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->330.0"
+   }
+  },
+  {
+   "item_id": "D0108",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0108",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0109",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->152.11896090756554"
+   }
+  },
+  {
+   "item_id": "D0109",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "318.0->317.99212598425197"
+   }
+  },
+  {
+   "item_id": "D0109",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0109",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0110",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->225.0"
+   }
+  },
+  {
+   "item_id": "D0110",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "204.0->179.0"
+   }
+  },
+  {
+   "item_id": "D0110",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0110",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0111",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->100.0"
+   }
+  },
+  {
+   "item_id": "D0111",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "240.0->240.0"
+   }
+  },
+  {
+   "item_id": "D0111",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0111",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0112",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->400.0"
+   }
+  },
+  {
+   "item_id": "D0112",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "168.0->168.0"
+   }
+  },
+  {
+   "item_id": "D0112",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0112",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0113",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0113",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->202.0"
+   }
+  },
+  {
+   "item_id": "D0113",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0113",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0114",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->350.0"
+   }
+  },
+  {
+   "item_id": "D0114",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "324.0->267.71999999999997"
+   }
+  },
+  {
+   "item_id": "D0114",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0114",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->customer"
+   }
+  },
+  {
+   "item_id": "D0115",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->242.0"
+   }
+  },
+  {
+   "item_id": "D0115",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "336.0->335.98425196850394"
+   }
+  },
+  {
+   "item_id": "D0115",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0115",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0116",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->220.0"
+   }
+  },
+  {
+   "item_id": "D0116",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->272.0"
+   }
+  },
+  {
+   "item_id": "D0116",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0116",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0117",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->177.47212105882645"
+   }
+  },
+  {
+   "item_id": "D0117",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.0"
+   }
+  },
+  {
+   "item_id": "D0117",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0117",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0118",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0"
+   }
+  },
+  {
+   "item_id": "D0118",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "276.0->204.0"
+   }
+  },
+  {
+   "item_id": "D0118",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0118",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0119",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "150.0->154.0"
+   }
+  },
+  {
+   "item_id": "D0119",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->293.0"
+   }
+  },
+  {
+   "item_id": "D0119",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0119",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0120",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->275.0"
+   }
+  },
+  {
+   "item_id": "D0120",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "342.0->336.0"
+   }
+  },
+  {
+   "item_id": "D0120",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0120",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0121",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "350.0->350.0940723495856"
+   }
+  },
+  {
+   "item_id": "D0121",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "222.0->193.0"
+   }
+  },
+  {
+   "item_id": "D0121",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['mismatch', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0121",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0122",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->60.0"
+   }
+  },
+  {
+   "item_id": "D0122",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "306.0->305.98425196850394"
+   }
+  },
+  {
+   "item_id": "D0122",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0122",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0123",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->206.5731396672303"
+   }
+  },
+  {
+   "item_id": "D0123",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "324.0->324.0"
+   }
+  },
+  {
+   "item_id": "D0123",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0123",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->split"
+   }
+  },
+  {
+   "item_id": "D0124",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->81.0"
+   }
+  },
+  {
+   "item_id": "D0124",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.01574803149606"
+   }
+  },
+  {
+   "item_id": "D0124",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0124",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0125",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "375.0->375.0063079764767"
+   }
+  },
+  {
+   "item_id": "D0125",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.0"
+   }
+  },
+  {
+   "item_id": "D0125",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0125",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0126",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->289.4669502487443"
+   }
+  },
+  {
+   "item_id": "D0126",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "282.0->282.00787401574803"
+   }
+  },
+  {
+   "item_id": "D0126",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0126",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0127",
+   "field": "hook_load",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->391.0"
+   }
+  },
+  {
+   "item_id": "D0127",
+   "field": "ceiling_height",
+   "case": "boundary",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->193.56"
+   }
+  },
+  {
+   "item_id": "D0127",
+   "field": "booth_dimensions",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0127",
+   "field": "electrical_scope",
+   "case": "boundary",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->customer"
+   }
+  },
+  {
+   "item_id": "D0128",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->306.0"
+   }
+  },
+  {
+   "item_id": "D0128",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->176.0"
+   }
+  },
+  {
+   "item_id": "D0128",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0128",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0129",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->41.0"
+   }
+  },
+  {
+   "item_id": "D0129",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "180.0->201.0"
+   }
+  },
+  {
+   "item_id": "D0129",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0129",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0130",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "400.0->404.0"
+   }
+  },
+  {
+   "item_id": "D0130",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->264.0"
+   }
+  },
+  {
+   "item_id": "D0130",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0130",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0131",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->250.00420531765118"
+   }
+  },
+  {
+   "item_id": "D0131",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->216.0"
+   }
+  },
+  {
+   "item_id": "D0131",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0131",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0132",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "325.0->325.0"
+   }
+  },
+  {
+   "item_id": "D0132",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "312.0->312.0"
+   }
+  },
+  {
+   "item_id": "D0132",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0132",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0133",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "200.0->158.07144198655723"
+   }
+  },
+  {
+   "item_id": "D0133",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "354.0->358.0"
+   }
+  },
+  {
+   "item_id": "D0133",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0133",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0134",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->201.0"
+   }
+  },
+  {
+   "item_id": "D0134",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "210.0->210.0"
+   }
+  },
+  {
+   "item_id": "D0134",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0134",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0135",
+   "field": "hook_load",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->97.0"
+   }
+  },
+  {
+   "item_id": "D0135",
+   "field": "ceiling_height",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "216.0->216.0"
+   }
+  },
+  {
+   "item_id": "D0135",
+   "field": "booth_dimensions",
+   "case": "boundary+unseen_format",
+   "truth": "match",
+   "pred": "mismatch",
+   "confidence": 0.3,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "unparsed"
+   }
+  },
+  {
+   "item_id": "D0135",
+   "field": "electrical_scope",
+   "case": "boundary+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->vendor"
+   }
+  },
+  {
+   "item_id": "D0136",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "100.0->100.08986703193442"
+   }
+  },
+  {
+   "item_id": "D0136",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "306.0->300.0"
+   }
+  },
+  {
+   "item_id": "D0136",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0136",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0137",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->56.879263643698415"
+   }
+  },
+  {
+   "item_id": "D0137",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "264.0->262.0"
+   }
+  },
+  {
+   "item_id": "D0137",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0137",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0138",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->275.0"
+   }
+  },
+  {
+   "item_id": "D0138",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "282.0->282.0"
+   }
+  },
+  {
+   "item_id": "D0138",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0138",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0139",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->193.0"
+   }
+  },
+  {
+   "item_id": "D0139",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "330.0->330.0"
+   }
+  },
+  {
+   "item_id": "D0139",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'near_miss', 'match']"
+   }
+  },
+  {
+   "item_id": "D0139",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0140",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "125.0->125.0"
+   }
+  },
+  {
+   "item_id": "D0140",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "198.0->195.0"
+   }
+  },
+  {
+   "item_id": "D0140",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'mismatch', 'match']"
+   }
+  },
+  {
+   "item_id": "D0140",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->customer"
+   }
+  },
+  {
+   "item_id": "D0141",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "50.0->57.54065043025305"
+   }
+  },
+  {
+   "item_id": "D0141",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "294.0->294.0"
+   }
+  },
+  {
+   "item_id": "D0141",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0141",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0142",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "125.0->125.00210265882559"
+   }
+  },
+  {
+   "item_id": "D0142",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "270.0->212.0"
+   }
+  },
+  {
+   "item_id": "D0142",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0142",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0143",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "275.0->272.0"
+   }
+  },
+  {
+   "item_id": "D0143",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "336.0->336.0"
+   }
+  },
+  {
+   "item_id": "D0143",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['near_miss', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0143",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->vendor"
+   }
+  },
+  {
+   "item_id": "D0144",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->178.0"
+   }
+  },
+  {
+   "item_id": "D0144",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "192.0->228.0"
+   }
+  },
+  {
+   "item_id": "D0144",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0144",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->split"
+   }
+  },
+  {
+   "item_id": "D0145",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "175.0->175.0"
+   }
+  },
+  {
+   "item_id": "D0145",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "300.0->324.0"
+   }
+  },
+  {
+   "item_id": "D0145",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0145",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->split"
+   }
+  },
+  {
+   "item_id": "D0146",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "125.0->125.0"
+   }
+  },
+  {
+   "item_id": "D0146",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "354.0->316.0"
+   }
+  },
+  {
+   "item_id": "D0146",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0146",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "customer->customer"
+   }
+  },
+  {
+   "item_id": "D0147",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "225.0->216.0"
+   }
+  },
+  {
+   "item_id": "D0147",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "246.0->245.98425196850394"
+   }
+  },
+  {
+   "item_id": "D0147",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'match']"
+   }
+  },
+  {
+   "item_id": "D0147",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  },
+  {
+   "item_id": "D0148",
+   "field": "hook_load",
+   "case": "standard+unseen_format",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->250.0"
+   }
+  },
+  {
+   "item_id": "D0148",
+   "field": "ceiling_height",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "282.0->265.0"
+   }
+  },
+  {
+   "item_id": "D0148",
+   "field": "booth_dimensions",
+   "case": "standard+unseen_format",
+   "truth": "near_miss",
+   "pred": "mismatch",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'mismatch']"
+   }
+  },
+  {
+   "item_id": "D0148",
+   "field": "electrical_scope",
+   "case": "standard+unseen_format",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "split->customer"
+   }
+  },
+  {
+   "item_id": "D0149",
+   "field": "hook_load",
+   "case": "standard",
+   "truth": "mismatch",
+   "pred": "mismatch",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "250.0->232.36722434286096"
+   }
+  },
+  {
+   "item_id": "D0149",
+   "field": "ceiling_height",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.97,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "240.0->240.0"
+   }
+  },
+  {
+   "item_id": "D0149",
+   "field": "booth_dimensions",
+   "case": "standard",
+   "truth": "near_miss",
+   "pred": "near_miss",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "['match', 'match', 'near_miss']"
+   }
+  },
+  {
+   "item_id": "D0149",
+   "field": "electrical_scope",
+   "case": "standard",
+   "truth": "match",
+   "pred": "match",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {},
+   "pred_extra": {
+    "detail": "vendor->vendor"
+   }
+  }
+ ],
+ "traces": [
+  {
+   "item_id": "D0000",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 0.00015350012108683586,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0001",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.750016912817955e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0002",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.360002301633358e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0003",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.25001310557127e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0004",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.4999800845980644e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0005",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.559996210038662e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0006",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8099864721298218e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0007",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8899870812892914e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0008",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.659996971487999e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0009",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9900111258029938e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0010",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.66998540610075e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0011",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.969987690448761e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0012",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8999987989664078e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0013",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.559996210038662e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0014",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.559996210038662e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0015",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5499844923615456e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0016",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4999957531690598e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0017",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9999995604157448e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0018",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4899840354919434e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0019",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8299866244196892e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0020",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4999957531690598e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0021",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.619996666908264e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0022",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.410006709396839e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0023",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8700102120637894e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0024",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5399960577487946e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0025",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4899840354919434e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0026",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.459995448589325e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0027",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.3499829694628716e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0028",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9100105166435242e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0029",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6799971237778664e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0030",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.71001660823822e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0031",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.810009755194187e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0032",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.460003063082695e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0033",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6399968191981316e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0034",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9099872335791588e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0035",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8099864721298218e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0036",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4700071662664413e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0037",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4999957531690598e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0038",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8099864721298218e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0039",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5399960577487946e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0040",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.410006709396839e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0041",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4900073185563087e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0042",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.529984340071678e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0043",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9099872335791588e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0044",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6899855583906174e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0045",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5700079277157784e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0046",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.619996666908264e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0047",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8399983420968056e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0048",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8399983420968056e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0049",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8299866244196892e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0050",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.3899832740426064e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0051",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7900096029043198e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0052",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.459995448589325e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0053",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.260001540184021e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0054",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.709993325173855e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0055",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.7999823689460754e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0056",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.120000474154949e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0057",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7999980375170708e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0058",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 8.25999304652214e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0059",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9100105166435242e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0060",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5899847969412804e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0061",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7799978852272034e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0062",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.359994687139988e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0063",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8300099074840546e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0064",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9100105166435242e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0065",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.66998540610075e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0066",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.54001934081316e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0067",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.100000321865082e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0068",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.7999823689460754e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0069",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.770001396536827e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0070",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.860006108880043e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0071",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7399975806474686e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0072",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9999995604157448e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0073",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.95999925583601e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0074",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.950010821223259e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0075",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6900088414549828e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0076",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6900088414549828e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0077",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.559996210038662e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0078",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.459995448589325e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0079",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5499844923615456e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0080",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6399968191981316e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0081",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4300068616867065e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0082",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4800188839435577e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0083",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5800196453928947e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0084",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7200207114219666e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0085",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5600194931030273e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0086",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.2999942302703857e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0087",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.769986167550087e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0088",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5300076231360435e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0089",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.2900057956576347e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0090",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4300068616867065e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0091",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5399960577487946e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0092",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.6499928683042526e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0093",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6999972760677338e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0094",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.110012039542198e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0095",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.459995448589325e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0096",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9399991035461426e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0097",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9900111258029938e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0098",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6999972760677338e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0099",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.1700124964118004e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0100",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.0100112780928612e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0101",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.0199997127056122e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0102",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8700102120637894e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0103",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6999972760677338e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0104",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8700102120637894e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0105",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7399975806474686e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0106",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.029995761811733e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0107",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 0.00016489997506141663,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0108",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.559996210038662e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0109",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.519995905458927e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0110",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.550007775425911e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0111",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.450007013976574e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0112",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5700079277157784e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0113",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5900080800056458e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0114",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5300076231360435e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0115",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8399983420968056e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0116",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5399960577487946e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0117",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.719997428357601e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0118",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8799986466765404e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0119",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7899863198399544e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0120",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4799956008791924e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0121",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.619996666908264e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0122",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9399991035461426e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0123",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.550007775425911e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0124",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7399975806474686e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0125",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7499860152602196e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0126",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.510007470846176e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0127",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.5600194931030273e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0128",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.3300061002373695e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0129",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.469983883202076e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0130",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7300091460347176e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0131",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.450007013976574e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0132",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.4399952962994576e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0133",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6800204068422318e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0134",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.610015846788883e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0135",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.469983443617821e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0136",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.1800009310245514e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0137",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.560011439025402e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0138",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.96000687032938e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0139",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.8999987989664078e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0140",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6900088414549828e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0141",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6300083845853806e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0142",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.9700109735131264e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0143",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.7300091460347176e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0144",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.459995448589325e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0145",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.3900065571069717e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0146",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.369998350739479e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0147",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.67000063508749e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0148",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.029995761811733e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "D0149",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.800013266503811e-05,
+   "replayed": false,
+   "error": null
+  }
+ ]
+}

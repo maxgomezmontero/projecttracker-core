@@ -1,0 +1,3957 @@
+{
+ "task": "milestone",
+ "pipeline": "rules_review",
+ "model": null,
+ "meta": {
+  "rules_accept": 0.85,
+  "llm_accept": null,
+  "effort": null,
+  "n_items": 150,
+  "seed": 7,
+  "n": 150
+ },
+ "units": [
+  {
+   "item_id": "M0000",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0001",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0002",
+   "field": "",
+   "case": "prose:award",
+   "truth": "order_accepted",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0003",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0004",
+   "field": "",
+   "case": "prose:meeting_notes",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0005",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0006",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0007",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0008",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0009",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-05-05",
+    "new_date": "2027-05-19"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-05-05",
+    "new_date": "2027-05-19"
+   }
+  },
+  {
+   "item_id": "M0010",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0011",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0012",
+   "field": "",
+   "case": "prose:ship_moved",
+   "truth": "ship_date_changed",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": "2027-07-15",
+    "new_date": "2027-07-22"
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0013",
+   "field": "",
+   "case": "prose:meeting_notes",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0014",
+   "field": "",
+   "case": "prose:submittal_request",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0015",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0016",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0017",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-02-18",
+    "new_date": "2027-03-11"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-02-18",
+    "new_date": "2027-03-11"
+   }
+  },
+  {
+   "item_id": "M0018",
+   "field": "",
+   "case": "prose:rfq",
+   "truth": "new_opportunity",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0019",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0020",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0021",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0022",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0023",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0024",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0025",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0026",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0027",
+   "field": "",
+   "case": "prose:submittal_request",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0028",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0029",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0030",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0031",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0032",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-03-25",
+    "new_date": "2027-04-15"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-03-25",
+    "new_date": "2027-04-15"
+   }
+  },
+  {
+   "item_id": "M0033",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0034",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0035",
+   "field": "",
+   "case": "prose:hedged_order",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0036",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0037",
+   "field": "",
+   "case": "prose:ship_moved",
+   "truth": "ship_date_changed",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": "2027-06-28",
+    "new_date": "2027-06-21"
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0038",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-10-16",
+    "new_date": "2027-11-06"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-10-16",
+    "new_date": "2027-11-06"
+   }
+  },
+  {
+   "item_id": "M0039",
+   "field": "",
+   "case": "prose:hedged_order",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0040",
+   "field": "",
+   "case": "prose:ship_moved",
+   "truth": "ship_date_changed",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": "2027-09-07",
+    "new_date": "2027-09-14"
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0041",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-03-15",
+    "new_date": "2027-04-05"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-03-15",
+    "new_date": "2027-04-05"
+   }
+  },
+  {
+   "item_id": "M0042",
+   "field": "",
+   "case": "prose:award",
+   "truth": "order_accepted",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0043",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0044",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-03-22",
+    "new_date": "2027-04-05"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-03-22",
+    "new_date": "2027-04-05"
+   }
+  },
+  {
+   "item_id": "M0045",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0046",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-07-29",
+    "new_date": "2027-08-05"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-07-29",
+    "new_date": "2027-08-05"
+   }
+  },
+  {
+   "item_id": "M0047",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0048",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0049",
+   "field": "",
+   "case": "prose:award",
+   "truth": "order_accepted",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0050",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0051",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-03-10",
+    "new_date": "2027-03-03"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-03-10",
+    "new_date": "2027-03-03"
+   }
+  },
+  {
+   "item_id": "M0052",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0053",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0054",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0055",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0056",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0057",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0058",
+   "field": "",
+   "case": "prose:hedged_order",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0059",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-02-12",
+    "new_date": "2027-03-05"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-02-12",
+    "new_date": "2027-03-05"
+   }
+  },
+  {
+   "item_id": "M0060",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0061",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0062",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0063",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0064",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0065",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0066",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0067",
+   "field": "",
+   "case": "prose:submittal_request",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0068",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0069",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0070",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0071",
+   "field": "",
+   "case": "prose:meeting_notes",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0072",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-06-18",
+    "new_date": "2027-06-25"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-06-18",
+    "new_date": "2027-06-25"
+   }
+  },
+  {
+   "item_id": "M0073",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-10-22",
+    "new_date": "2027-11-05"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-10-22",
+    "new_date": "2027-11-05"
+   }
+  },
+  {
+   "item_id": "M0074",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0075",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0076",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0077",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0078",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0079",
+   "field": "",
+   "case": "notice:portal_reminder",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "portal-reminder"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0080",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0081",
+   "field": "",
+   "case": "prose:award",
+   "truth": "order_accepted",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0082",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0083",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0084",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0085",
+   "field": "",
+   "case": "prose:hedged_order",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0086",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-10-08",
+    "new_date": "2027-10-29"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-10-08",
+    "new_date": "2027-10-29"
+   }
+  },
+  {
+   "item_id": "M0087",
+   "field": "",
+   "case": "prose:rfq",
+   "truth": "new_opportunity",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0088",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0089",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0090",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0091",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0092",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0093",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0094",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0095",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0096",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0097",
+   "field": "",
+   "case": "prose:ship_moved",
+   "truth": "ship_date_changed",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": "2027-02-09",
+    "new_date": "2027-02-23"
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0098",
+   "field": "",
+   "case": "prose:rfq",
+   "truth": "new_opportunity",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0099",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0100",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0101",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0102",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0103",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-05-20",
+    "new_date": "2027-06-10"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-05-20",
+    "new_date": "2027-06-10"
+   }
+  },
+  {
+   "item_id": "M0104",
+   "field": "",
+   "case": "notice:new_opportunity",
+   "truth": "new_opportunity",
+   "pred": "new_opportunity",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "erp-new-opp",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0105",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-09-06",
+    "new_date": "2027-08-30"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-09-06",
+    "new_date": "2027-08-30"
+   }
+  },
+  {
+   "item_id": "M0106",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0107",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0108",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0109",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-03-04",
+    "new_date": "2027-02-25"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-03-04",
+    "new_date": "2027-02-25"
+   }
+  },
+  {
+   "item_id": "M0110",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0111",
+   "field": "",
+   "case": "prose:award",
+   "truth": "order_accepted",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0112",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0113",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0114",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0115",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0116",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0117",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0118",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0119",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-05-06",
+    "new_date": "2027-05-13"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-05-06",
+    "new_date": "2027-05-13"
+   }
+  },
+  {
+   "item_id": "M0120",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0121",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0122",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0123",
+   "field": "",
+   "case": "prose:ship_moved",
+   "truth": "ship_date_changed",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": "2027-05-16",
+    "new_date": "2027-05-30"
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0124",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0125",
+   "field": "",
+   "case": "notice:portal_reminder",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "portal-reminder"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0126",
+   "field": "",
+   "case": "prose:rfq",
+   "truth": "new_opportunity",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0127",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0128",
+   "field": "",
+   "case": "prose:award",
+   "truth": "order_accepted",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0129",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0130",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0131",
+   "field": "",
+   "case": "prose:submittals_approved",
+   "truth": "submittals_received",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0132",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-08-30",
+    "new_date": "2027-09-13"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-08-30",
+    "new_date": "2027-09-13"
+   }
+  },
+  {
+   "item_id": "M0133",
+   "field": "",
+   "case": "prose:meeting_notes",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0134",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0135",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0136",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0137",
+   "field": "",
+   "case": "prose:customer_po",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.8,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "status_rule": "Please find attached our purchase order",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0138",
+   "field": "",
+   "case": "notice:reply_to_notice",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0139",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0140",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-02-17",
+    "new_date": "2027-02-10"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-02-17",
+    "new_date": "2027-02-10"
+   }
+  },
+  {
+   "item_id": "M0141",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-10-07",
+    "new_date": "2027-10-28"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-10-07",
+    "new_date": "2027-10-28"
+   }
+  },
+  {
+   "item_id": "M0142",
+   "field": "",
+   "case": "notice:vendor_b_submittals",
+   "truth": "submittals_received",
+   "pred": "submittals_received",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-b-submittals",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0143",
+   "field": "",
+   "case": "notice:ship_unchanged",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "ship-date"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0144",
+   "field": "",
+   "case": "notice:our_po_to_vendor",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.9,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [
+     "vendor-po"
+    ],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0145",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-01-31",
+    "new_date": "2027-02-21"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-01-31",
+    "new_date": "2027-02-21"
+   }
+  },
+  {
+   "item_id": "M0146",
+   "field": "",
+   "case": "prose:meeting_notes",
+   "truth": "none",
+   "pred": "none",
+   "confidence": 0.6,
+   "route": "review",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detectors": [],
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0147",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0148",
+   "field": "",
+   "case": "notice:po_acceptance",
+   "truth": "order_accepted",
+   "pred": "order_accepted",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": null,
+    "new_date": null
+   },
+   "pred_extra": {
+    "detector": "vendor-a-accept",
+    "old_date": null,
+    "new_date": null
+   }
+  },
+  {
+   "item_id": "M0149",
+   "field": "",
+   "case": "notice:ship_changed",
+   "truth": "ship_date_changed",
+   "pred": "ship_date_changed",
+   "confidence": 0.95,
+   "route": "rules",
+   "truth_extra": {
+    "old_date": "2027-10-09",
+    "new_date": "2027-10-16"
+   },
+   "pred_extra": {
+    "detector": "vendor-a-ship",
+    "old_date": "2027-10-09",
+    "new_date": "2027-10-16"
+   }
+  }
+ ],
+ "traces": [
+  {
+   "item_id": "M0000",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 0.24397849990054965,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0001",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 5.800044164061546e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0002",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 7.899943739175797e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0003",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.600019797682762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0004",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 6.200047209858894e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0005",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0006",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0007",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0008",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0009",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.200031980872154e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0010",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0011",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.200016751885414e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0012",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0013",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.899913281202316e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0014",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.8998980522155762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0015",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0016",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0017",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0018",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.500127837061882e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0019",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0020",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0021",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0022",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0023",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0024",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0025",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0026",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0027",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0028",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.8998980522155762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0029",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0030",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0031",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0032",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0033",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0034",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0035",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.6998965293169022e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0036",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0037",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0038",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0039",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0040",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0041",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0042",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0043",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0044",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0045",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0046",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0047",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0048",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0049",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0050",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.1997763067483902e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0051",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0052",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0053",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0054",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0055",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0056",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 9.997747838497162e-07,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0057",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0058",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0059",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.90013088285923e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0060",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 8.998904377222061e-07,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0061",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0062",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0063",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0064",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0065",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0066",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.8998980522155762e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0067",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0068",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0069",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0070",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0071",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.8000289350748062e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0072",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.500127837061882e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0073",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0074",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0075",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0076",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0077",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0078",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0079",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.6999041438102722e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0080",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0081",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0082",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0083",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0084",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0085",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0086",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0087",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0088",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 2.00001522898674e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0089",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0090",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.959991201758385e-05,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0091",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0092",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0093",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0094",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0095",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0096",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0097",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.800013706088066e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0098",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0099",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0100",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0101",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0102",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.700129359960556e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0103",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0104",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 8.998904377222061e-07,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0105",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0106",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0107",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.500127837061882e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0108",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0109",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0110",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0111",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.500127837061882e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0112",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0113",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0114",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0115",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.5997793525457382e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0116",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0117",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.500127837061882e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0118",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0119",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0120",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0121",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0122",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0123",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0124",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0125",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0126",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.400010660290718e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0127",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0128",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.300126314163208e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0129",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0130",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0131",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0132",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0133",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 3.8000289350748062e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0134",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 6.7998189479112625e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0135",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.100124791264534e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0136",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0137",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0138",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.7997808754444122e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0139",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0140",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.4998950064182281e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0141",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0142",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.600012183189392e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0143",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0144",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.200009137392044e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0145",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0146",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 4.00003045797348e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0147",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.00000761449337e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0148",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.0998919606208801e-06,
+   "replayed": false,
+   "error": null
+  },
+  {
+   "item_id": "M0149",
+   "llm_called": false,
+   "cost_usd": 0.0,
+   "latency_s": 1.2998934835195541e-06,
+   "replayed": false,
+   "error": null
+  }
+ ]
+}
